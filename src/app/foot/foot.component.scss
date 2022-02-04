@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.footer{
+    
+    margin-top: 100vh;
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background: #c7a0d7;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom:0%;
+}
+.custom-shape-divider-bottom-1643891264 {
+    position: absolute;
+    bottom: 75vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    height: 25vh;;
+}
+
+.custom-shape-divider-bottom-1643891264 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 177px;
+}
+
+.custom-shape-divider-bottom-1643891264 .shape-fill {
+    fill: #c7a0d7;
+}
+.block
+{
+    height: 27vh;
+    width: 100%;
+    justify-content: baseline;
+    // background-color: #c7a0d7;
+    display: flex;
+    flex-direction: row;
+
+}
+.picture{
+    height: 27vh;
+    width: 25vw;
+    // background-image: url(../assets/images/flower.png);
+    // background-color: #c7a0d7;
+    // background-image: url(/flower.png);
+}
+
+.gap{
+    height: 27vh;
+    width: 5vw;
+    // background-color: #c7a0d7;  
+}
+.text{
+    height: 27vh;
+    width: 30vw;
+    // background-color: #c7a0d7;
+}
+.text h1{
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+.footer p{
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 0.5cm;
+}
+.contact{
+    height: 25vh;
+    width: 40vw;
+    // background-color: #c7a0d7;
+    // border-radius: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    // box-shadow: 0px 0px 10px #c7a0d7;
+}
+// .button{
+//     align-items: center;
+//     margin-left: 35vh;
+// }
+
+
+.field{
+    margin-top: 1vh;
+    width: 100%;
+    // align-items: center;
+    // text-align: center;
+    // font-size: 20px;
+}
+.field input,
+.field1 textarea {
+    width: 70%;
+    // align-items: center;
+    padding: 2px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 1cm;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.field1{
+    margin-top: 2vh;
+}
+textarea{
+    resize: vertical;;
+}
+button{
+    width: 30%;
+    border: none;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #FCAEBB;
+    text-align: center;
+}
+
+
+
+.rights{
+    height: 3vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    // background-color: #c7a0d7;
+    color: black;
+    font-size: 0.4cm;
+}

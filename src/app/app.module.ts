@@ -6,7 +6,7 @@ import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from "@angular/forms";
+
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 
@@ -17,7 +17,7 @@ import { AngularFireModule } from '@angular/fire/compat';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,

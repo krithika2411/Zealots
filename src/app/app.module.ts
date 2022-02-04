@@ -10,11 +10,15 @@ import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HomeComponent } from './home/home.component';
+import { BlogComponent } from './blog/blog.component';
+import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BlogComponent,
+    MoodtrackerComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,6 @@ import { HomeComponent } from './home/home.component';
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

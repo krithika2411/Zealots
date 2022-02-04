@@ -49,9 +49,15 @@
     width: 25vw;
     // background-image: url(../assets/images/flower.png);
     // background-color: #c7a0d7;
-    // background-image: url(/flower.png);
+    margin-bottom: 2vh;
 }
+.flower{
+    height: 30vh;
+    width: 20vw;
+    // margin-left: 2vh;
+   
 
+}
 .gap{
     height: 27vh;
     width: 5vw;
@@ -74,29 +80,16 @@
 .contact{
     height: 25vh;
     width: 40vw;
-    // background-color: #c7a0d7;
-    // border-radius: 20px;
     margin: 0 auto;
     padding: 10px;
-    // box-shadow: 0px 0px 10px #c7a0d7;
 }
-// .button{
-//     align-items: center;
-//     margin-left: 35vh;
-// }
-
-
 .field{
     margin-top: 1vh;
     width: 100%;
-    // align-items: center;
-    // text-align: center;
-    // font-size: 20px;
 }
 .field input,
 .field1 textarea {
     width: 70%;
-    // align-items: center;
     padding: 2px;
     font-size: 18px;
     background-color: white;
@@ -125,10 +118,9 @@ button{
 
 .rights{
     height: 3vh;
-    width: 100%;
+    width: 30%;
     justify-content: center;
     text-align: center;
-    // background-color: #c7a0d7;
     color: black;
     font-size: 0.4cm;
 }

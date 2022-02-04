@@ -10,25 +10,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HomeComponent } from './home/home.component';
-<<<<<<< HEAD
 import { FootComponent } from './foot/foot.component';
 
-=======
 import { BlogComponent } from './blog/blog.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
->>>>>>> d0eaf1dbc68cee088a70dfffc6eca6bcfd6a78d4
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-<<<<<<< HEAD
     FootComponent,
     
-=======
     BlogComponent,
-    MoodtrackerComponent
->>>>>>> d0eaf1dbc68cee088a70dfffc6eca6bcfd6a78d4
+    MoodtrackerComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

@@ -6,4 +6,45 @@
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+.top{
+    height: 20vh;
+    background-color: aqua;
+    width: 100%;
+}
+.product{
+    height: 80vh;
+    background-color: darkkhaki;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rect{
+    height: 36wsvh;
+    background-color: rebeccapurple;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.space{
+    height: 5vh;
+    background-color: rgb(201, 185, 218);
+    width: 100%;
+}
+.card{
+    height: 36vh;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.name{
+    height: 36vh;
+    width: 40vh;
+    background-color: azure;
+
 }

@@ -1,1 +1,43 @@
-<p>moodtracker works!</p>
+<div class="main">
+    <div class="box">
+        <div class="periodtrack">
+            <div class="period">
+                <div class="periodmonth">
+                    <div class="numdate"></div>
+                    <div class="cal"></div>
+                </div>
+                <div class="numofdays">
+                    <div class="sub"></div>
+                    <div class="num"></div>
+                    <div class="add"></div>
+                </div>
+                <div class="cycle">
+                    <div class="sub"></div>
+                    <div class="num"></div>
+                    <div class="add"></div>
+                </div>
+
+                <div class="track">Track Now</div>
+
+            </div>
+        </div>
+ <div class="calender">
+    <div class="head">
+        <div class="month">
+        <div class="year">January</div>
+        </div>
+        <div class="arrows"></div>
+    </div>
+    <div class="days">
+        <div class="name" *ngFor="let days of days">{{days}}</div>
+    </div>
+    <div class="grid">
+        <div class="five" *ngFor="let five of [0, 1, 2, 3, 4,5] ">
+            <div class="seven" *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]">
+                <div class="date"></div>
+            </div> 
+          </div>
+    </div>
+</div>
+ </div>   
+</div>

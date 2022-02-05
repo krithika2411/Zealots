@@ -19,8 +19,9 @@
 }
 .calender
 {
-    height:75vh;
-    width:78vw;
+    height:80vh;
+    width:77vw;
+    border-radius: 20px;
     align-items: center;
    background-color:#e9c1f6;
 }
@@ -38,7 +39,8 @@
 
 .period
 {
-    height:10vh;
+
+    height:11vh;
     width: 80%;
     align-items: center;
     background-color: rgb(158, 156, 9);
@@ -65,6 +67,7 @@
 {
   height:6vh;
   width:20%;
+  cursor: pointer;
   background-color: antiquewhite;
 }
 .numofdays
@@ -151,14 +154,14 @@
 
 .grid
 {
-    height:85vh;
+    height:76vh;
     width:100%;
-    background-color: burlywood;
+    background-color:bisque;
 }
 
 .five
 {
-   height: 11vh;
+   height: 10vh;
    width: 100%;
    margin: 3vh 0vh;
    display: flex;
@@ -168,7 +171,7 @@
 }
  .seven
  {
-    height: 11vh;
+    height: 10vh;
     width: 12%;
     background-color: coral;
     align-items: center;

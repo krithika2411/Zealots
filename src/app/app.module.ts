@@ -15,7 +15,7 @@ import { FootComponent } from './foot/foot.component';
 import { BlogComponent } from './blog/blog.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
-
+import { ForumComponent } from './forum/forum.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,17 +24,18 @@ import { ProductComponent } from './product/product.component';
     
     BlogComponent,
     MoodtrackerComponent,
-    ProductComponent
+    ProductComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

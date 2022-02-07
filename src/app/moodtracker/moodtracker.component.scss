@@ -19,7 +19,7 @@
 }
 .calender
 {
-    height:80vh;
+    height:78vh;
     width:77vw;
     border-radius: 20px;
     align-items: center;
@@ -137,6 +137,32 @@
     background-color: bisque;
 }
 
+.adjust{
+    height:4vh;
+    width:70%;
+    background-color: chocolate;
+}
+.arrows
+{
+    width:10%;
+    height:4vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 234, 238);
+}
+
+.arrow1
+{
+    font-size:2em;
+    margin-top:-2vh;
+    cursor: pointer;
+}
+.arrow2
+{
+    font-size:2em;
+    margin-top:-2vh;
+    cursor: pointer;
+}
 .days
 {
     width:100%;
@@ -181,7 +207,7 @@
 
 .date
 {
-    height:5vh;
+    height:3vh;
     font-size: 1.5em;
     width: 20%;
     background-color:ghostwhite;
@@ -189,7 +215,8 @@
 
 .mark{
     border-radius : 50%;
-    height :3vh;
-    width : 3vh;
+    // height :2vh;
+    // width : 2vh;
     background-color: lightcoral;
  }
+

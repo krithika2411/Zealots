@@ -143,7 +143,7 @@
     height:5vh;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(197, 116, 116);
+    // background-color: rgb(197, 116, 116);
 }
 
 
@@ -156,7 +156,7 @@
 {
     height:76vh;
     width:100%;
-    background-color:bisque;
+    // background-color:bisque;
 }
 
 .five
@@ -165,6 +165,7 @@
    width: 100%;
    margin: 3vh 0vh;
    display: flex;
+   align-items: center;
    flex-direction: row;
    background-color: cornflowerblue;
    justify-content: space-evenly;
@@ -178,9 +179,17 @@
     cursor: pointer;
 }
 
-.date
-{
-    height:5vh;
-    width: 20%;
-    background-color: dimgray;
-}
+// .date
+// {
+//     height:5vh;
+//     font-size: 1.5em;
+//     width: 20%;
+//     background-color:ghostwhite;
+// }
+
+.mark{
+    border-radius : 50%;
+    height :3vh;
+    width : 3vh;
+    background-color: lightcoral;
+ }

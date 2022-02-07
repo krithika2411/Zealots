@@ -14,8 +14,12 @@ import { FootComponent } from './foot/foot.component';
 import { BlogComponent } from './blog/blog.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
+<<<<<<< HEAD
 
 
+=======
+import { ForumComponent } from './forum/forum.component';
+>>>>>>> 82442f0d2f96b142807c33a7f3ffd76de2a3bb53
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,17 +28,25 @@ import { ProductComponent } from './product/product.component';
     BlogComponent,
     MoodtrackerComponent,
     ProductComponent,
+<<<<<<< HEAD
 
+=======
+    ForumComponent
+>>>>>>> 82442f0d2f96b142807c33a7f3ffd76de2a3bb53
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     ReactiveFormsModule,
+=======
+>>>>>>> 82442f0d2f96b142807c33a7f3ffd76de2a3bb53
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,8 +5,7 @@ import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
-import { ForumComponent } from './forum/forum.component';
-
+import { PerioddateComponent } from './perioddate/perioddate.component';
 
 
 const routes: Routes = [ 
@@ -30,14 +29,10 @@ const routes: Routes = [
   path: 'product',
   component: ProductComponent,
 },
-<<<<<<< HEAD
-
-=======
 {
-  path: 'forum',
-  component: ForumComponent,
+  path: 'perioddate',
+  component: PerioddateComponent,
 },
->>>>>>> 82442f0d2f96b142807c33a7f3ffd76de2a3bb53
 ];
 
 @NgModule({

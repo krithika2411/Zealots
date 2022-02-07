@@ -6,20 +6,22 @@ import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,

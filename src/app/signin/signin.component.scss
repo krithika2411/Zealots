@@ -1,0 +1,119 @@
+* {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    // transition: 0.5s;
+    background-color: plum;
+}
+
+.container{
+    position: relative;
+    width: 60vw;
+    height: 70vh;
+    // border-style: dashed;
+    overflow: hidden;
+    // background-color: yellow;
+}
+
+.card1_bg{
+    // top: 6%;
+    position: absolute;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.219);
+    box-shadow: rgba(255, 255, 255, 0.219);
+    // box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+.card1_bg .card{
+    position: relative;
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card1_bg .card p{
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.card1_bg .card button{
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-size: medium;
+    font-weight: lighter;
+    border-radius: 20px;
+    border: none;
+}
+
+.signin_form_card{
+    // position: absolute;
+    // top: -5vh;
+    width: 30vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    // border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    transition: 0.5s, ease-in-out;
+    // border-style: dashed;
+    transform: translateX(0%);
+}
+
+.slider1{
+    display: flex;
+    transform: translateX(-50%);
+    transition: transform 1.5s ease-in-out;
+
+}
+
+.slider1slide{
+    transform: translateX(50%);
+    // transition: 5s, ease-in-out;    
+}
+
+.signin_title{
+    font-size: 250%;
+}
+.signup_title{
+    font-size: 250%;
+}
+
+.container .signin_form_card button{
+    cursor: pointer;
+    background: purple;
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+    border-radius: 20px;
+    border: none;
+}
+.container .signup_form_card button{
+    cursor: pointer;
+    background: purple;
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+    border-radius: 20px;
+    border: none;
+}

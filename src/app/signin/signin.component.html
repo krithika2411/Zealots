@@ -1,0 +1,69 @@
+<!-- <p>signin works!</p> -->
+<div class="bod">
+    <div class="container">
+        <div class="card1_bg">
+            <div class="card signin" >
+                <strong>Alredy have an Account??</strong>
+                <button class="signin_btn" (click)="move()">Sign IN</button>
+            </div>
+            <div class="card signup" >
+                <strong>Don't have an Account??</strong>
+                <button class="signup_btn" (click)="move()">Sign UP</button>
+            </div>
+        </div>
+        
+        <div class="slider1"
+           [ngClass]="{
+            slider1slide: !login
+          }">
+            <div class="signin_form_card">
+                <div class="signup_title">
+                    <strong>Create Account</strong>
+                </div>             
+                <p>or use your email for registration</p>           
+                <div class="inputfield">
+                    <div class="inputlabel"> Name</div>
+                    <input type="text" formControlName="Name" placeholder="  Enter Your Name" />
+                </div>
+                <div class="inputfield">
+                    <div class="inputlabel"> Email</div>
+                    <input type="email" formControlName="Email" placeholder="  Enter Your Email ID" />
+                </div>
+                <div class="inputfield">
+                    <div class="inputlabel"> Password</div>
+                    <input type="password" formControlName="Password" placeholder="  Enter Your Password" />
+                </div>
+                <div class="signup_bttn">
+                    <button>Sign UP</button>
+                </div>
+            </div>
+            
+            <div class="signin_form_card">
+                <div class="signin_title">
+                    <strong>Sign IN</strong>
+                </div>             
+                <p>or use your Account</p>           
+                <div class="inputfield">
+                    <div class="inputlabel"> Email</div>
+                    <input type="email" formControlName="Email" placeholder="  Enter Your Email ID" />
+                </div>
+                <div class="inputfield">
+                    <div class="inputlabel"> Password</div>
+                    <input type="password" formControlName="Password" placeholder="  Enter Your Password" />
+                </div>
+                <div class="login_btn">
+                    <button>Log IN</button>
+                </div>
+            </div>
+            
+        <!-- <div class="slider2"
+            [ngClass]="{
+                slider2slide: !login
+            }">
+            
+            </div>
+        </div>     -->
+    </div>
+</div>
+
+

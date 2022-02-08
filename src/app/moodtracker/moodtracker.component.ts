@@ -28,7 +28,7 @@ export class MoodtrackerComponent implements OnInit {
     if (this.month != tempvar1.getMonth()) {
       return false;
     }
-    else if(this.currentday == this.daysofweek(i, j) && this.month == this.month) 
+    else if(this.currentday == this.daysofweek(i, j) &&  this.currentday && this.month == this.month) 
     { return true; }
     else { return false; }
   }

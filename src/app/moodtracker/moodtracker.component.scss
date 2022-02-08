@@ -19,7 +19,7 @@
 }
 .calender
 {
-    height:80vh;
+    height:78vh;
     width:77vw;
     border-radius: 20px;
     align-items: center;
@@ -137,13 +137,40 @@
     background-color: bisque;
 }
 
+.adjust{
+    height:4vh;
+    width:70%;
+    background-color: chocolate;
+}
+.arrows
+{
+    width:10%;
+    height:4vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 234, 238);
+}
+
+.arrow1
+{
+    font-size:2em;
+    margin-top:-2vh;
+    cursor: pointer;
+}
+.arrow2
+{
+    font-size:2em;
+    margin-top:-2vh;
+    cursor: pointer;
+}
 .days
 {
     width:100%;
     height:5vh;
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(197, 116, 116);
+
+    justify-content: space-around;
+    // background-color: rgb(197, 116, 116);
 }
 
 
@@ -156,7 +183,7 @@
 {
     height:76vh;
     width:100%;
-    background-color:bisque;
+    // background-color:bisque;
 }
 
 .five
@@ -165,7 +192,9 @@
    width: 100%;
    margin: 3vh 0vh;
    display: flex;
+   align-items: center;
    flex-direction: row;
+   text-align: center;
    background-color: cornflowerblue;
    justify-content: space-evenly;
 }
@@ -174,13 +203,28 @@
     height: 10vh;
     width: 12%;
     background-color: coral;
+    // align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     cursor: pointer;
+    font-size:25px;
 }
 
-.date
-{
-    height:5vh;
-    width: 20%;
-    background-color: dimgray;
-}
+// .date
+// {
+//     height:3vh;
+//     font-size: 1.5em;
+//     width: 20%;
+//     background-color:ghostwhite;
+// }
+
+.mark{
+    border-radius : 50%;
+    height :4vh;
+    width : 4vh;
+    
+    background-color:blue;
+ }
+

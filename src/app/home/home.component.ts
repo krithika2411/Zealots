@@ -8,25 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  
+  
   ngOnInit(): void {
   }
 
 }
-// var texts = new Array();
-//             texts.push("Krithika");
-//             texts.push("Tanve");
-//             texts.push("Preethika");
-//             texts.push("Tanvee");
-
-//             var point = 0;
-//             function changeText() {
-//                 $('sent-gen').html(texts[point]);
-//                 if(point < texts.length){
-//                     point++
-//                 }else{
-//                     point = 0;
-//                 }
-//             }
-//             changeText();
-//             setInterval(changeText, 5000) 

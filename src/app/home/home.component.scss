@@ -1,30 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    
 .coverpage {
+    height: 100vh;
+    width: 100%;
+    background-color: #E9C1F6;
+}
+section{
     position: relative;
     height: 100vh;
-    width: 100vw;
-    // background-color: #c7a0d7;
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
 }
+.set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.set div{
+    position: absolute;
+    display: block;
+}
+.set div:nth-child(1)
+{
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -7s;
+}
+.set div:nth-child(2)
+{
+    left: 50%;
+    animation: animate 20s linear infinite;
+    animation-delay: -5s;
+}.set div:nth-child(3)
+{
+    left: 70%;
+    animation: animate 20s linear infinite;
+    animation-delay: 0s;
+}
+.set div:nth-child(4)
+{
+    left: 0%;
+    animation: animate 15s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(5)
+{
+    left: 85%;
+    animation: animate 18s linear infinite;
+    animation-delay: -10s;
+}
+.set div:nth-child(6)
+{
+    left: 0%;
+    animation: animate 12s linear infinite;
+}
+.set div:nth-child(7)
+{
+    left: 15%;
+    animation: animate 14s linear infinite;
+}
+.set div:nth-child(8)
+{
+    left: 60%;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    20%
+    {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%
+    {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%
+    {
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%
+    {
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%
+    {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+.set2{
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+}
+.set3{
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+}
+.wrapper{
+    display: inline-flex;
+}
+.dynamic-txts{
+    height: 95px;
+    line-height: 95px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    color: black;
+    list-style: none;
+    font-family: 'The Nautigal', cursive;
+    font-size: 80px;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 15s steps(5) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -476px;
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #E9C1F6;
+    border-left: 2px solid #fc6d60;
+    animation: typing 3s steps(31) infinite;
+
+}
+@keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
 .bg-image{
     height: 30vh;
     width: 40vw;
-    // background: url(https://giphy.com/gifs/woman-women-blood-cdICHA6rKm3eXicQfJ 
-    // );
+    // background: url(..\assets\images\giphy.gif);
     // background-color: aqua;
 }
-.sent-gen{
-    height: 15%;
-    width: 35%;
-    // background-color: antiquewhite;
-    text-align: center;
-    color: black;
-    font-family: 'The Nautigal', cursive;
-    font-size: 1em;
+.custom-shape-divider-bottom-1644337205 {
+    position: absolute;
+    margin-bottom: -5vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644337205 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 102px;
+}
+
+.custom-shape-divider-bottom-1644337205 .shape-fill {
+    fill: #FFFFFF;
 }
 .about-us{
     // background-color: antiquewhite;
@@ -35,37 +194,62 @@
     height: 25%;
     text-align: center;
     color: black;
-    font-family: 'The Nautigal', cursive;
-    font-size: 5em;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
 }
 .body-about{
     height: 75%;
     color: black;
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
+    // background-color: antiquewhite;
     text-align: center;
     align-items: center;
+}
+.custom-shape-divider-top-1644337550 {
+    position: absolute;
+    margin-top: 155vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1644337550 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1644337550 .shape-fill {
+    fill: white;
 }
 
 .container{
     align-items: center;
     width: 100vw;
-    height: 70vh;
-    // background-color: #c7a0d7;
+    height: 100vh;
+    background-color: pink;
     display: flex;
     flex-direction: column;
+}
+.space{
+    height: 15%;
+    width: 100%;
 }
 .creater{
     // background-color: rgb(111, 212, 212);
     width: 100vw;
-    height: 15%;
-    font-family: 'The Nautigal', cursive;
-    font-size: 5em;
+    height: 25%;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
     text-align: center;
 }
 .catalogue{
     width: 100vw;
-    height: 85%;
+    height: 60%;
     // background-color: bisque;
     display: flex;
     flex-direction: row;
@@ -97,6 +281,7 @@
     flex-direction: column;
     align-items: center;
     font-family:'The Nautigal', cursive;
+    font-weight: 800;
     font-size: 2em;
     transition: 0.5s;
 }
@@ -111,66 +296,87 @@
 .intro{
     height: 10vh;
     font-family: 'Roboto Slab', serif;
+    font-weight: 400;
     font-size: 0.5em;
     text-align: center;
 }
 .name:hover{
     transform: translateY(-50px);
     color: black;
-    font-weight: 500;
+    font-weight: bold;
 }
 .intro:hover{
     color:black;
-    font-weight: 300;
+    font-weight: 500;
 }
 
+.custom-shape-divider-bottom-1644339328 {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -171vh;
+    margin-left: 0.5vw;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(0deg);
+}
+
+.custom-shape-divider-bottom-1644339328 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 101px;
+}
+
+.custom-shape-divider-bottom-1644339328 .shape-fill {
+    fill: pink;
+}
+
+.container1{
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    // background-color: #c7a0d7;
+    display: flex;
+    flex-direction: column;
+}
 .reviews{
     // background-color: rgb(111, 212, 212);
-    height: 20%;
+    height: 25%;
     width: 100vw;
     text-align: center;
     color: black;
-    font-family: 'The Nautigal', cursive;
-    font-size: 5em;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
 }
 .catalogues{
-    width: 80vw;
-    height: 80%;
+    width: 95vw;
+    height: 75%;
     // background-color: bisque;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
 }
-.user1{
-    height: 50%;
-    width: 100%;
-    // background-color: #c7a0d7;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.user2{
-    height: 50%;
-    width: 100%;
-    // background-color: #c7a0d7;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.img-usr{
+.user{
     height: 100%;
-    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imge-usr{
+    height: 20vh;
+    width: 10vw;
     background-color: rgb(93, 141, 184);
     border-radius: 50%;
 }
 .rvw-usr{
-    height: 100%;
-    width: 75%;
+    height: 20vh;
+    width: 20vw;
     background-color: rgb(236, 177, 105);
     border-radius: 10px;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
 }

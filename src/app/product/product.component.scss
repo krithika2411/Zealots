@@ -42,7 +42,7 @@
 	// min-width: 320px;
 	// max-width: 480px;
 	// max-height: 360px;
-	height:45vh;
+	height:40vh;
 	width: 100%;
 	// background: #3085a3;
 	text-align: center;
@@ -59,6 +59,7 @@
 }
 .pic{
 	margin-top: 2vh;
+	background-size: cover;
 
 }
 
@@ -174,3 +175,20 @@ figure.effect-sadie:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+.kri{
+	height:5vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: antiquewhite;
+}
+.amount{
+	width:75%;
+	background-color: #484c61;
+	font-size: 1.5em;
+	font-weight: 500;
+
+}
+// .button{
+// 	height: 4vh;
+// }

@@ -1,32 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .main{
     min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
-    background-color: antiquewhite;
+    background-color: #fff;
 }
 .top{
-    height: 20vh;
-    background-color: aqua;
+    height: 10vh;
+    background-color: #E9C1F6;
     width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 200;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.custom-shape-divider-top-1644313685 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 11.3vh;
+    margin-right:0.5vw;
+}
+
+.custom-shape-divider-top-1644313685 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1644313685 .shape-fill {
+    fill: #E9C1F6;
 }
 .product{
-    height: 80vh;
-    background-color: darkkhaki;
+    height: 90vh;
+    // background-color: rgb(182, 180, 159);
     width: 100%;
-    
-}
-.two{
-    width: 100%;
-    height:30vh;
-    background-color: rgb(202, 150, 81);
     display: flex;
+    flex-direction: column;
+    // margin: 20px 0;
+   
+}
+
+.one{
+    width:100%;
+    height: 35vh;
+    // background-color: rgb(187, 197, 230);
+    margin: 10px 0;
+    display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 4vh 0vh;
+    margin-top: 12vh;
 }
-.four{
+.first{
     width:20%;
-    height: 30vh;
-    background-color: royalblue;
+    height: 35vh;
+    // background-color: brown;
+    display: flex;
+    flex-direction: column;
 }
+.card{
+    width:100%;
+    height: 30vh;
+    // background-color: rgb(89, 58, 161);
+}
+.name{
+    width:100%;
+    height: 5vh;
+    background-color: #e9c1f6;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1em;
+
+}
+// .sec{
+//     width:20%;
+//     height: 20vh;
+//     background-color:blue;
+// }
+// .third{
+//     width:20%;
+//     height: 20vh;
+//     background-color:yellow;
+// }
+
+// .two{
+//     width: 100%;
+//     height:20vh;
+//     background-color: rgb(202, 150, 81);
+//     margin: 10px 0;
+//     // justify-content: space-evenly;
+//     // margin: 4vh 0vh;
+// }
+// .three{
+//     width: 100%;
+//     height:20vh;
+//     background-color: rgb(209, 188, 160);
+//     margin: 10px 0;
+// }
+// .four{
+//     width:100%;
+//     height: 20vh;
+//     background-color: royalblue;
+//     margin: 10px 0;
+// }

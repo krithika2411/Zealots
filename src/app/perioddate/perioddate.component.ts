@@ -8,10 +8,15 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export class PerioddateComponent implements OnInit {
    userprofileForm = new FormGroup({
-     firstName: new FormControl(''),
+     cycle: new FormControl(''),
+    flow: new FormControl(''),
      date: new FormControl(''),
    })
-
+    
+   
+    // cycle2 = new FormGroup({
+    //   number1: new FormControl(''),
+    // })
    onSubmit(){
      console.log(this.userprofileForm.value.date);
    }

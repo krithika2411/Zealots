@@ -37,9 +37,7 @@
             </div>
             <div class="grid">
                 <div class="five" *ngFor="let week of [0, 1, 2, 3, 4] ">
-                    <div class="seven " [ngClass]="{
-                        mark:iscurrent(week, day)
-                      }"  *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" > {{daysofweek(week, day) }} 
+                    <div class="seven "  *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" > {{daysofweek(week, day) }} 
                        <!-- <div class="date" >{{daysofweek(week, day) }}</div> -->
 
                     </div>
@@ -49,3 +47,6 @@
     </div>
 </div>
 
+<!-- [ngClass]="{
+    mark:iscurrent(week, day)
+  }"  -->

@@ -32,8 +32,10 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     ForumComponent,
     MoodtrackerComponent,
     ProductComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    PerioddateComponent,
   ],
+
   imports: [
     AppRoutingModule,
     ReactiveFormsModule,
@@ -43,6 +45,7 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,  
     FormsModule,
+    BrowserModule,
     ReactiveFormsModule,  
   ],
   providers: [],

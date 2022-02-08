@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 // import { weekdays, months as mm } from '../JSONdata/calender';
 
@@ -20,8 +22,9 @@ export class MoodtrackerComponent implements OnInit {
   currentyear: number = 0;
   currentmonth: number = 0;
   offsetcurrentmonth: number = 0;
+  user: any;
   // referencedate:Date= 
-  constructor() { }
+  constructor(private as: AuthService, private router: Router) { }
   
   iscurrent(i: number, j: number) {
     var tempvar1 = new Date(Date.now())
@@ -111,6 +114,10 @@ export class MoodtrackerComponent implements OnInit {
     this.setoffset(this.month);
     
         //  console.log(this.offsetcurrentmonth, 'this is date')
+        this.as.getUserState().subscribe(res => {
+          if (!res) this.router.navigate(['/signin'])
+          this.user = res;
+        });
 
   }
 

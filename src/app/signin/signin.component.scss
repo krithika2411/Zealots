@@ -7,7 +7,7 @@
     min-height: 100vh;
     min-width: 100vw;
     // transition: 0.5s;
-    background-color: plum;
+    background-color: #E9C1F6;
 }
 
 .container{
@@ -54,7 +54,7 @@
     cursor: pointer;
     background: white;
     color: black;
-    font-family: 'Pacifico', cursive;
+    // font-family: 'Pacifico', cursive;
     font-size: medium;
     font-weight: lighter;
     border-radius: 20px;
@@ -99,8 +99,18 @@
     font-size: 250%;
 }
 .signup_bttn{
-    font-family: 'Pacifico', cursive;
+    height: 5vh;
+    border: purple;
+    
+    // font-family: 'Pacifico', cursive;
 }
+
+// .signin_form_card .btn{
+//     height: 2vh;
+//     // text-align: center;
+//     text-align: justify;
+//     font-size: large;
+// }
 
 .inputfield input {
     // line-height: 2vh;

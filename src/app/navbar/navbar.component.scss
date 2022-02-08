@@ -2,10 +2,11 @@
 
 .nav {
   width: 100vw;
-  height: 13vh;
+  height: 10vh;
+  z-index: 999;
 //   height: 10vh;
   align-items: center;
-  background-color: rgb(221, 160, 221);
+  background-color: #E9C1F6;
 }
 
 .nav__list{
@@ -15,7 +16,7 @@
     gap: 10px;
     font-family: 'Pacifico', cursive;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 120%;
 }
 
 .nav__list .nav__listlogo{
@@ -29,10 +30,17 @@
 
 .nav__list .nav__listlogo .nav__im{
   // background-color: yellow;
-  margin-top: -30%;
+  margin-top: -38%;
   // object-fit: cover;
   height: 20vh;
   width: 10vw;
+}
+
+.nav__list .nav__line{
+  font-style: none;
+}
+a {
+  text-decoration: none !important;
 }
 
 .nav__list .nav__listitem{
@@ -41,6 +49,7 @@
       padding: 1.5rem 1rem;
       cursor: pointer;
       color: black;
+      margin-top: -1%;
 
       &::after {
         content: "";

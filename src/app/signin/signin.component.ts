@@ -12,6 +12,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class SigninComponent implements OnInit {
   errormessage: any;
+  user: any;
 
   constructor(private as: AuthService, private router: Router) {}
   login: boolean = true;
@@ -99,7 +100,11 @@ export class SigninComponent implements OnInit {
     // console.log(this.formreg.value);
     // console.log(this.formlogin.value);
     this.signindata = logindata;
-    this.signupdata = regdata;    
+    this.signupdata = regdata;  
+    this.as.getUserState().subscribe(res => {
+      if (!res) this.router.navigate(['/signin'])
+      this.user = res;
+    });  
   }
   
 

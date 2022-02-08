@@ -1,7 +1,4 @@
-* {
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .bod{
     display: flex;
@@ -47,16 +44,17 @@
     flex-direction: column;
 }
 
-.card1_bg .card p{
-    color: black;
-    font-size: larger;
-    font-weight: bold;
-}
+// .card1_bg .card p{
+//     color: black;
+//     font-size: larger;
+//     font-weight: bold;
+// }
 
 .card1_bg .card button{
     cursor: pointer;
     background: white;
     color: black;
+    font-family: 'Pacifico', cursive;
     font-size: medium;
     font-weight: lighter;
     border-radius: 20px;
@@ -68,11 +66,13 @@
     // top: -5vh;
     width: 30vw;
     height: 70vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.973);
     // border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    line-height: 4vh;
     flex-direction: column;
     // box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
     transition: 0.5s, ease-in-out;
@@ -98,6 +98,24 @@
 .signup_title{
     font-size: 250%;
 }
+.signup_bttn{
+    font-family: 'Pacifico', cursive;
+}
+
+.inputfield input {
+    // line-height: 2vh;
+    width: 20vw;
+    height: 3.5vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-size: 70%;
+    border-radius: 8px;
+    background-color: rgba(221, 160, 221, 0.685);
+    border-color: black;
+    border-width: 1px;
+}
 
 .container .signin_form_card button{
     cursor: pointer;
@@ -117,3 +135,16 @@
     border-radius: 20px;
     border: none;
 }
+
+.alert{
+    width: 20vw;
+    font-size: 80%;
+    padding: 0;
+    color: black;
+    background-color: rgb(243, 91, 91);
+    border-radius: 20px;
+}
+
+// .error{
+//     // color: rgb(121, 35, 35);
+// }

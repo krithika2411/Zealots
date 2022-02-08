@@ -1,5 +1,61 @@
-.bod{
-    background-color: aqua;
-    height: 30vh;
-    width: 30vw;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.nav {
+  width: 100vw;
+  height: 13vh;
+//   height: 10vh;
+  align-items: center;
+  background-color: rgb(221, 160, 221);
+}
+
+.nav__list{
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.nav__list .nav__listlogo{
+  // background-color: black;
+  // background: url(/src/assets/images/Logo.png);
+  width: 8vw;
+  height: 12vh;
+  margin-right: 90vh;
+  border-radius: 50%;
+}
+
+.nav__list .nav__listlogo .nav__im{
+  // background-color: yellow;
+  margin-top: -30%;
+  // object-fit: cover;
+  height: 20vh;
+  width: 10vw;
+}
+
+.nav__list .nav__listitem{
+      list-style: none;
+      position: relative;
+      padding: 1.5rem 1rem;
+      cursor: pointer;
+      color: black;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 0.3rem;
+        border-radius: 100rem;
+        position: absolute;
+        left: 0.9rem;
+        bottom: 0.8rem;
+        background-color: purple;
+        transition: width 200ms ease-in;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        width: 80%;
+      }
 }

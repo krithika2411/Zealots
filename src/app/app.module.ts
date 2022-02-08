@@ -4,20 +4,31 @@ import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
-import { environment } from 'src/environments/environment';
+import {environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SigninComponent } from './signin/signin.component';
+import { FootComponent } from './foot/foot.component';
+import { BlogComponent } from './blog/blog.component';
+import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
+import { ProductComponent } from './product/product.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SigninComponent
+    SigninComponent,
+    FootComponent,
+    BlogComponent,
+    ForumComponent,
+    MoodtrackerComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,10 +37,13 @@ import { SigninComponent } from './signin/signin.component';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
-    
+    AngularFireDatabaseModule,  
+    FormsModule,
+    ReactiveFormsModule,  
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+ 
+ }

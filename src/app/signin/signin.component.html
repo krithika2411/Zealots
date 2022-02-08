@@ -2,11 +2,11 @@
 <div class="bod">
     <div class="container">
         <div class="card1_bg">
-            <div class="card signin" >
+            <div class="card signin" style="font-size: large;">
                 <strong>Alredy have an Account??</strong>
                 <button class="signin_btn" (click)="move()">Sign IN</button>
             </div>
-            <div class="card signup" >
+            <div class="card signup" style="font-size: large;">
                 <strong>Don't have an Account??</strong>
                 <button class="signup_btn" (click)="move()">Sign UP</button>
             </div>
@@ -17,53 +17,94 @@
             slider1slide: !login
           }">
             <div class="signin_form_card">
-                <div class="signup_title">
-                    <strong>Create Account</strong>
-                </div>             
-                <p>or use your email for registration</p>           
-                <div class="inputfield">
-                    <div class="inputlabel"> Name</div>
-                    <input type="text" formControlName="Name" placeholder="  Enter Your Name" />
+                <form [formGroup]="formreg"  class="signupform">
+                    <div class="inputfield">
+                        <div class="signup_title">
+                            <strong style="font-family: 'Pacifico', cursive;">Create Account</strong>
+                        </div>
+                        <p>Register using your Account</p>
+                        <p style="font-weight: bolder; font-size: 4vh;">OR</p>
+                        <div *ngFor="let x of signupdata" class="inputfield">
+                            <div *ngIf="x.type != 'dropdown'">
+                              <input
+                                placeholder="Enter {{ x.placeholder }}"
+                                formControlName="{{ x.formname }}"
+                                type="{{ x.type }}"
+                              />
+                              <div
+                                *ngIf="
+                                  formregget(x.formname).invalid &&
+                                  (formregget(x.formname).dirty ||
+                                    formregget(x.formname).touched)
+                                "
+                                class="alert alert-danger"
+                              >
+                                <div *ngIf="formregget(x.formname).errors?.required">
+                                  {{ x.formname }} is required.
+                                </div>
+                                <div *ngIf="formregget(x.formname).errors?.pattern">
+                                  {{ x.patternerror }}
+                                </div>
+                              </div>
+                              <div
+                                *ngIf="
+                                  formreg.hasError('notSame') &&
+                                  x.formname == 'confirmpassword' &&
+                                  !formregget('confirmpassword').errors?.required
+                                "
+                                class="alert alert-danger"
+                              >
+                                Passwords don't match
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup_bttn" (click)="submit()">
+                        <button>Sign UP</button>
+                    </div>
+                    </form>
                 </div>
-                <div class="inputfield">
-                    <div class="inputlabel"> Email</div>
-                    <input type="email" formControlName="Email" placeholder="  Enter Your Email ID" />
-                </div>
-                <div class="inputfield">
-                    <div class="inputlabel"> Password</div>
-                    <input type="password" formControlName="Password" placeholder="  Enter Your Password" />
-                </div>
-                <div class="signup_bttn">
-                    <button>Sign UP</button>
-                </div>
-            </div>
+               
+                
             
             <div class="signin_form_card">
+            <form
+                [formGroup]="formlogin"
+                
+                class="signupform l">
+                <div class="inputfield">
                 <div class="signin_title">
-                    <strong>Sign IN</strong>
+                    <strong style="font-family: 'Pacifico', cursive;">Sign IN</strong>
                 </div>             
-                <p>or use your Account</p>           
-                <div class="inputfield">
-                    <div class="inputlabel"> Email</div>
-                    <input type="email" formControlName="Email" placeholder="  Enter Your Email ID" />
+                <p>or use your Account</p>
+                <div *ngFor="let x of signindata" class="inputfield">
+                    <div class="inputlabel">{{ x.placeholder }}</div>
+                    <input
+                      placeholder="Enter {{ x.placeholder }}"
+                      formControlName="{{ x.formname }}"
+                      type="{{ x.type }}"/>
+                    <div
+                      *ngIf="
+                        formlog(x.formname).invalid &&
+                        (formlog(x.formname).dirty || formlog(x.formname).touched)
+                      "
+                      class="alert alert-danger">
+                      <div *ngIf="formlog(x.formname).errors?.required">
+                        {{ x.formname }} is required.
+                      </div>
+                      <div *ngIf="formlog(x.formname).errors?.pattern">
+                        {{ x.patternerror }}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="inputfield">
-                    <div class="inputlabel"> Password</div>
-                    <input type="password" formControlName="Password" placeholder="  Enter Your Password" />
-                </div>
-                <div class="login_btn">
+                <div class="login_btn" (click)="submit()">
                     <button>Log IN</button>
-                </div>
+                </div> 
+            </form>
             </div>
-            
-        <!-- <div class="slider2"
-            [ngClass]="{
-                slider2slide: !login
-            }">
-            
-            </div>
-        </div>     -->
     </div>
+</div>
 </div>
 
 

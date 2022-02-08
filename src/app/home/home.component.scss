@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+.coverpage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    // background-color: #c7a0d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bg-image{
+    height: 30vh;
+    width: 40vw;
+    // background: url(https://giphy.com/gifs/woman-women-blood-cdICHA6rKm3eXicQfJ 
+    // );
+    // background-color: aqua;
+}
+.sent-gen{
+    height: 15%;
+    width: 35%;
+    // background-color: antiquewhite;
+    text-align: center;
+    color: black;
+    font-family: 'The Nautigal', cursive;
+    font-size: 1em;
+}
+.about-us{
+    // background-color: antiquewhite;
+    height: 55vh;
+    width: 100vw;
+}
+.title-about{
+    height: 25%;
+    text-align: center;
+    color: black;
+    font-family: 'The Nautigal', cursive;
+    font-size: 5em;
+}
+.body-about{
+    height: 75%;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    // background-color: #c7a0d7;
+    display: flex;
+    flex-direction: column;
+}
+.creater{
+    // background-color: rgb(111, 212, 212);
+    width: 100vw;
+    height: 15%;
+    font-family: 'The Nautigal', cursive;
+    font-size: 5em;
+    text-align: center;
+}
+.catalogue{
+    width: 100vw;
+    height: 85%;
+    // background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card{
+    width: 23vw;
+    height: 100%;
+    // background-color: rgb(218, 124, 163);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.5),
+                -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    color: rgb(68, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    background: #c7a0d7;
+    height: 90%;
+    width: 19vw;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family:'The Nautigal', cursive;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.image{
+    background-color: aliceblue;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.intro{
+    height: 10vh;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.5em;
+    text-align: center;
+}
+.name:hover{
+    transform: translateY(-50px);
+    color: black;
+    font-weight: 500;
+}
+.intro:hover{
+    color:black;
+    font-weight: 300;
+}
+
+.reviews{
+    // background-color: rgb(111, 212, 212);
+    height: 20%;
+    width: 100vw;
+    text-align: center;
+    color: black;
+    font-family: 'The Nautigal', cursive;
+    font-size: 5em;
+}
+.catalogues{
+    width: 80vw;
+    height: 80%;
+    // background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.user1{
+    height: 50%;
+    width: 100%;
+    // background-color: #c7a0d7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.user2{
+    height: 50%;
+    width: 100%;
+    // background-color: #c7a0d7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-usr{
+    height: 100%;
+    width: 25%;
+    background-color: rgb(93, 141, 184);
+    border-radius: 50%;
+}
+.rvw-usr{
+    height: 100%;
+    width: 75%;
+    background-color: rgb(236, 177, 105);
+    border-radius: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    text-align: center;
+}

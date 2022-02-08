@@ -1,0 +1,195 @@
+.main
+{ 
+  height:100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color:#ffff ; 
+
+}
+
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.calender
+{
+    height:80vh;
+    width:77vw;
+    border-radius: 20px;
+    align-items: center;
+   background-color:#e9c1f6;
+}
+.periodtrack
+{
+    height:25vh;
+    width:75vw;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:darkslategrey;
+   
+}
+
+.period
+{
+
+    height:11vh;
+    width: 80%;
+    align-items: center;
+    background-color: rgb(158, 156, 9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.periodmonth
+{
+    height:6vh;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e9c1f6;
+}
+
+.numdate
+{
+    height:6vh;
+    width:80%;  
+}
+.cal
+{
+  height:6vh;
+  width:20%;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+.numofdays
+{
+    height:6vh;
+    width: 20%;
+    background-color: #e9c1f6;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub
+{
+    width: 26%;
+    height:6vh;
+    cursor: pointer;
+    background-color:crimson
+}
+
+.num
+{
+    width:48%;
+    height:6vh;
+   
+}
+
+.add
+{
+    width: 26%;
+    height:6vh;
+    cursor: pointer;
+    background-color:crimson
+}
+.cycle
+{
+    height:6vh;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e9c1f6;
+}
+
+.track
+{
+  height: 4vh;
+  width: 15%;
+  text-align: center;
+  background-color: #e9c1f6;
+  cursor: pointer;
+}
+.head
+{
+ height:4vh;
+ width:100%;
+ background-color: cadetblue;
+ display: flex;
+ flex-direction: row;
+}
+
+.month
+{
+    height:4vh;
+    width:20%;
+    font-size:1.5em;
+    // text-align: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.days
+{
+    width:100%;
+    height:5vh;
+    display: flex;
+    justify-content: space-evenly;
+    // background-color: rgb(197, 116, 116);
+}
+
+
+.name
+{
+    font-size:1.5rem; 
+}
+
+.grid
+{
+    height:76vh;
+    width:100%;
+    // background-color:bisque;
+}
+
+.five
+{
+   height: 10vh;
+   width: 100%;
+   margin: 3vh 0vh;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   background-color: cornflowerblue;
+   justify-content: space-evenly;
+}
+ .seven
+ {
+    height: 10vh;
+    width: 12%;
+    background-color: coral;
+    align-items: center;
+    cursor: pointer;
+}
+
+// .date
+// {
+//     height:5vh;
+//     font-size: 1.5em;
+//     width: 20%;
+//     background-color:ghostwhite;
+// }
+
+.mark{
+    border-radius : 50%;
+    height :3vh;
+    width : 3vh;
+    background-color: lightcoral;
+ }

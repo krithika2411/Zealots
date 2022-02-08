@@ -36,6 +36,7 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
+    BrowserModule,
     
   ],
   providers: [],

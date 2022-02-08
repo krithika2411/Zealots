@@ -32,92 +32,102 @@
     align-items: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color:darkslategrey;
    
 }
-
-.period
+.formclass
 {
-
+    font-size:1.5em;
+    display: flex;
+    justify-content:space-evenly;
+    // margin: 0 5vw;
     height:11vh;
-    width: 80%;
+    width:80%;
     align-items: center;
     background-color: rgb(158, 156, 9);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
-.periodmonth
-{
-    height:6vh;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    background-color: #e9c1f6;
-}
-
-.numdate
-{
-    height:6vh;
-    width:80%;  
-}
-.cal
-{
-  height:6vh;
-  width:20%;
-  cursor: pointer;
-  background-color: antiquewhite;
-}
-.numofdays
-{
-    height:6vh;
-    width: 20%;
-    background-color: #e9c1f6;
-    display: flex;
-    flex-direction: row;
-}
-
-.sub
-{
-    width: 26%;
-    height:6vh;
+.formclass button{
+    font-size:18px;
+    margin-left: 3vh;
     cursor: pointer;
-    background-color:crimson
 }
+// .period
+// {
 
-.num
-{
-    width:48%;
-    height:6vh;
-   
-}
+//     height:11vh;
+//     width: 80%;
+//     align-items: center;
+//     background-color: rgb(158, 156, 9);
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-evenly;
+// }
 
-.add
-{
-    width: 26%;
-    height:6vh;
-    cursor: pointer;
-    background-color:crimson
-}
-.cycle
-{
-    height:6vh;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    background-color: #e9c1f6;
-}
+// .periodmonth
+// {
+//     height:6vh;
+//     width: 23%;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content:space-evenly;
+//     background-color: #e9c1f6;
+// }
 
-.track
-{
-  height: 4vh;
-  width: 15%;
-  text-align: center;
-  background-color: #e9c1f6;
-  cursor: pointer;
-}
+// .numdate
+// {
+//     height:6vh;
+//     width:80%;  
+// }
+// .cal
+// {
+//   height:6vh;
+//   width:20%;
+//   cursor: pointer;
+//   background-color: antiquewhite;
+// }
+// .numofdays
+// {
+//     height:6vh;
+//     width: 20%;
+//     background-color: #e9c1f6;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+// }
+// .period{
+//     display: flex;
+//     // flex-direction: row;
+
+// }
+// .myinput{
+//     // display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content:space-evenly;
+//     background-color: #e9c1f6;
+// }
+// .cycle
+// {
+//     height:6vh;
+//     width: 20%;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+//     background-color: #e9c1f6;
+// }
+
+// .track
+// {
+//   height: 4vh;
+//   width: 15%;
+//   text-align: center;
+//   align-items: center;
+//   background-color: #e9c1f6;
+//   cursor: pointer;
+// }
 .head
 {
  height:4vh;
@@ -228,3 +238,10 @@
     background-color:blue;
  }
 
+.periodmark{
+    border-radius : 50%;
+    height :4vh;
+    width : 4vh;
+    
+    background-color:red;
+}

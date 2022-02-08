@@ -4,7 +4,7 @@
             <div class="period">
                 <div class="periodmonth">
                     <div class="numdate"></div>
-                    <div class="cal"></div>
+                 
                 </div>
                 <div class="numofdays">
                     <div class="sub"></div>
@@ -39,9 +39,15 @@
                 <div class="five" *ngFor="let week of [0, 1, 2, 3, 4] ">
                     <div class="seven mark"   *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" >  
                        <div class="date" >{{daysofweek(week, day) }}</div>
+                    <div class="seven " *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" >
+                       <div [ngClass]="{
+                        mark:iscurrent(week, day)
+                      }" >{{daysofweek(week, day) }}</div>
+                             
                     </div>
                   </div>
             </div>
         </div>
     </div>
 </div>
+

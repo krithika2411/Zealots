@@ -10,8 +10,14 @@ import { AuthService } from '../services/auth.service';
 export class HomeComponent implements OnInit {
   user: any;
 
+<<<<<<< HEAD
   constructor(private as: AuthService, private router: Router) { }
 
+=======
+  constructor() { }
+  
+  
+>>>>>>> a1357f82bc29c623224a78ad00c1334c4ad036cd
   ngOnInit(): void {
     this.as.getUserState().subscribe(res => {
       if (!res) this.router.navigate(['/signin'])
@@ -20,20 +26,3 @@ export class HomeComponent implements OnInit {
   }
 
 }
-// var texts = new Array();
-//             texts.push("Krithika");
-//             texts.push("Tanve");
-//             texts.push("Preethika");
-//             texts.push("Tanvee");
-
-//             var point = 0;
-//             function changeText() {
-//                 $('sent-gen').html(texts[point]);
-//                 if(point < texts.length){
-//                     point++
-//                 }else{
-//                     point = 0;
-//                 }
-//             }
-//             changeText();
-//             setInterval(changeText, 5000) 

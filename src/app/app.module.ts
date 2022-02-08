@@ -5,6 +5,7 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import {AngularFireStorageModule} from '@angular/fire/compat/storage';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
 import {environment } from 'src/environments/environment';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -19,7 +20,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ForumComponent } from './forum/forum.component';
 import { YoutubeComponent } from './youtube/youtube.component';
 import { PerioddateComponent } from './perioddate/perioddate.component';
-
+// import { FormGroup, FormControl } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,16 +38,22 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
   ],
 
   imports: [
+    BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
+    FormsModule, ReactiveFormsModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
+    // FormGroup, FormControl,
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,  
     FormsModule,
+<<<<<<< HEAD
     BrowserModule,
     ReactiveFormsModule,  
+=======
+  
+>>>>>>> a1357f82bc29c623224a78ad00c1334c4ad036cd
   ],
   providers: [],
   bootstrap: [AppComponent]

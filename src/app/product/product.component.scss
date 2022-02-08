@@ -4,7 +4,7 @@
     max-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
-    background-color: antiquewhite;
+    background-color: #fff;
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -19,16 +19,39 @@
     font-family: 'Pacifico', cursive;
 
 }
+.custom-shape-divider-top-1644313685 {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    // margin-top: 11.3vh;
+    // margin-right:0.5vw;
+}
+
+.custom-shape-divider-top-1644313685 svg {
+     position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1644313685 .shape-fill {
+    fill: #E9C1F6;
+}
 .product{
     height: 80vh;
-    background-color: darkkhaki;
+    // background-color: darkkhaki;
     width: 100%;
-    
+    display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
 }
 .two{
     width: 100%;
     height:45vh;
-    background-color: rgb(202, 150, 81);
+    // background-color: rgb(202, 150, 81);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -37,7 +60,8 @@
 .four{
     width:20%;
     height: 45vh;
-    background-color: royalblue;
+    // background-color: royalblue;
+	margin:2%;
 }
 
 .grid figure {
@@ -187,11 +211,11 @@ figure.effect-sadie:hover p {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	background-color: antiquewhite;
+	 background-color: #e9c1f6;
 }
 .amount{
 	width:75%;
-	background-color: #484c61;
+	// background-color: #484c61;
 	font-size: 1.5em;
 	font-weight: 500;
 

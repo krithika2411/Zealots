@@ -3,12 +3,12 @@
     <div class="container">
         <div class="card1_bg">
             <div class="card signin" style="font-size: large;">
-                <strong>Alredy have an Account??</strong>
-                <button class="signin_btn" (click)="move()">Sign IN</button>
+                <strong style="font-family: 'Pacifico', cursive;">Alredy have an Account?</strong>
+                <button class="signup_bttn" (click)="move()">Sign in</button>
             </div>
             <div class="card signup" style="font-size: large;">
-                <strong>Don't have an Account??</strong>
-                <button class="signup_btn" (click)="move()">Sign UP</button>
+                <strong style="font-family: 'Pacifico', cursive;">Don't have an Account?</strong>
+                <button class="signup_bttn" (click)="move()">Sign up</button>
             </div>
         </div>
         
@@ -59,9 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="signup_bttn" (click)="submit()">
-                        <button>Sign UP</button>
-                    </div>
+                    <div class="btn btn1" (click)="submit()" style="width: 6vw; height: 1vh; align-items: center; justify-content: center; margin-left: 5vw;">Sign up</div>
                     </form>
                 </div>
                
@@ -74,7 +72,7 @@
                 class="signupform l">
                 <div class="inputfield">
                 <div class="signin_title">
-                    <strong style="font-family: 'Pacifico', cursive;">Sign IN</strong>
+                    <strong style="font-family: 'Pacifico', cursive;">Sign in</strong>
                 </div>             
                 <p>or use your Account</p>
                 <div *ngFor="let x of signindata" class="inputfield">
@@ -98,12 +96,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="login_btn" (click)="submit()">
-                    <button>Log IN</button>
-                </div> 
+                <div class="btn btn1" (click)="submit()" style="width: 6vw; align-items: center; justify-content: center; margin-left: 5vw;">Log IN</div> 
             </form>
             </div>
     </div>
+    <!-- </div> -->
 </div>
 </div>
 

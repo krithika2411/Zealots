@@ -36,6 +36,7 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     YoutubeComponent,
     PerioddateComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -46,7 +47,7 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,  
-    FormsModule,
+   
   
   ],
   providers: [],

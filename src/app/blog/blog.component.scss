@@ -16,21 +16,38 @@
 
 .ani
 {
+<<<<<<< HEAD
     height : 54vh;
     width : 100%;
     align-items: center;
     background-color:a;
     overflow: hidden;
+=======
+    height : 58vh;
+    width : 100%;
+    align-items: center;
+    overflow: hidden;
+    // background-color:a;
+
+
+>>>>>>> a7c3e72fa18afbc6d1cfb27eda381d9101b8b4fc
 
 }
 .girl{
     font-size:15px;
     line-height:15px;
+    // height: 68vh;
     // width : 80%;
     // margin-top:-6vh;
+    // border: black;
+    
+    // border-style: dotted;
     margin-top: -17vh;
+    // z-index: -1;
     // background-color:brown;
+    // padding-top: -40%;
     background : url(https://media.giphy.com/media/41x8G9RQjdKSKbO7it/giphy.gif) ;
+    // background-size: 50% 120%;
     // background-size: 450px;
     // background-attachment: fixed;
     // background-position:center;

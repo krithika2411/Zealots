@@ -11,7 +11,7 @@ export class MoodtrackerComponent implements OnInit {
   days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
   months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   numberofdays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-  // currentweek: Array<String> = [];
+  currentweek: Array<String> = [];
   periodarray:Array<Date> = [];
   currentschedule: any = {};
   month: number = 0;
@@ -153,7 +153,7 @@ oncyclesubmmit1(i: number, j: number)
     for (let k = 0; k< 3; k++){
       console.log(this.month, this.periodarray ,'periodsss');
       
-      // console.log(typeof this.periodarray[0]);
+      console.log(typeof this.periodarray);
       if (this.month== this.periodarray[k].getMonth()  )
       {
         

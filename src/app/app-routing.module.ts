@@ -6,6 +6,7 @@ import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
+import { YoutubeComponent } from './youtube/youtube.component';
 
 
 
@@ -29,6 +30,10 @@ const routes: Routes = [
 {
   path: 'product',
   component: ProductComponent,
+},
+{
+  path: 'youtube',
+  component: YoutubeComponent,
 },
 ];
 

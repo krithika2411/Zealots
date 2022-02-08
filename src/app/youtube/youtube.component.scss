@@ -1,0 +1,32 @@
+.main{
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: antiquewhite;
+}
+.top{
+    height: 20vh;
+    background-color: aqua;
+    width: 100%;
+}
+.product{
+    height: 80vh;
+    background-color: darkkhaki;
+    width: 100%;
+    
+}
+.two{
+    width: 100%;
+    height:30vh;
+    background-color: rgb(202, 150, 81);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4vh 0vh;
+}
+.four{
+    width:20%;
+    height: 30vh;
+    background-color: royalblue;
+}

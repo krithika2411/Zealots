@@ -15,6 +15,7 @@ import { FootComponent } from './foot/foot.component';
 import { BlogComponent } from './blog/blog.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
+import { YoutubeComponent } from './youtube/youtube.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProductComponent } from './product/product.component';
     
     BlogComponent,
     MoodtrackerComponent,
-    ProductComponent
+    ProductComponent,
+    YoutubeComponent
   ],
   imports: [
     BrowserModule,

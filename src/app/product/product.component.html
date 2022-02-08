@@ -1,23 +1,43 @@
-<!-- <p>product works!</p> -->
-<div class="full">
-    <div class="page">
-        <div class="top"></div>
-        <div class="product">
-            <div class="rect">  1
-                <div class="card">
-                    <div class="name" *ngFor="let card of [0,1,2,3]">
-                        <div class="item"></div>
+ 
+ <div class="full">
+
+     <div class="top"></div>
+    <div class="product">
+         <div class="two" *ngFor="let rows of [0,1,2]"> 
+           <div class="four" *ngFor="let columns of [0,1,2]" >
+                <!-- <div class="snip"> -->
+                    <div class="content">
+                        <div class="grid">
+                            <figure class="effect-sadie">
+                                <img class="pic" src="../../assets/images/flower.png" alt="img02"/>
+                                <figcaption>
+                                    <h2>Holy <span>Sadie</span></h2>
+                                    <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                                    <a href="https://codepen.io/mattlansom/pen/MwLKOM">View more</a>
+                                </figcaption>			
+                            </figure>
+                        </div>
                     </div>
-                </div>
+                    <!-- <div class="figcaption">
+                    <img class ="im"src="../../assets/images/flower.png">  --> 
+                         <!-- <p>information</p> 
+                         <h2>Click here to <span>Buy</span></h2> 
+                    </div>
+                    <div class="kri"><button>Now</button> </div>
+                </div> -->
             </div>
-            <div class="space"></div>
-            <div class="rect">  2
-                <div class="card">
-                    <div class="name" *ngFor="let card of [0,1,2,3]">
-            </div>
-            
-                
-            
-        
+        </div>
     </div>
-</div>
+</div> 
+<!-- <div class="content">
+    <div class="grid">
+        <figure class="effect-sadie">
+            <img src="../../assets/images/flower.png" alt="img02"/>
+            <figcaption>
+                <h2>Holy <span>Sadie</span></h2>
+                <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                <a href="#">View more</a>
+            </figcaption>			
+        </figure>
+    </div>
+</div> -->

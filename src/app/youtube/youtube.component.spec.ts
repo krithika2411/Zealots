@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FootComponent } from './foot.component';
+import { YoutubeComponent } from './youtube.component';
 
-describe('FootComponent', () => {
-  let component: FootComponent;
-  let fixture: ComponentFixture<FootComponent>;
+describe('YoutubeComponent', () => {
+  let component: YoutubeComponent;
+  let fixture: ComponentFixture<YoutubeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FootComponent ]
+      declarations: [ YoutubeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FootComponent);
+    fixture = TestBed.createComponent(YoutubeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

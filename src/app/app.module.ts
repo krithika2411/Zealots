@@ -17,6 +17,9 @@ import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ForumComponent } from './forum/forum.component';
+import { YoutubeComponent } from './youtube/youtube.component';
+import { PerioddateComponent } from './perioddate/perioddate.component';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +32,11 @@ import { ForumComponent } from './forum/forum.component';
     ForumComponent,
     MoodtrackerComponent,
     ProductComponent,
+    YoutubeComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,

@@ -55,14 +55,72 @@
 
 .list
 {
-    width:40%;
+    width:35%;
     height:100vh;
     background-color:cadetblue;
 }
 
+
+
+.blog 
+{
+    height: 18vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    background-color:bisque;
+}
+
+.pic
+{
+  height: 18vh;
+  width: 55%;
+  background-color: chocolate;
+}
+
+.info
+{
+    height: 18vh;
+    width:45% ;
+    background-color: darkorchid;
+}
+
+.blog:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 2px silver;
+}
+
 .description
 {
-    width:60%;
+    width:65%;
     height:100vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
     background-color:burlywood;
+}
+
+.tit
+{
+    height:10vh;
+    width: 100%;
+    background-color: crimson;
+}
+
+.pics
+{
+    height:35vh;
+    width:50%;
+    text-align: center;
+    align-items:center;
+    background-color: rgb(135, 222, 150);
+}
+
+.des
+{
+    height:50vh;
+    width: 100%;
 }

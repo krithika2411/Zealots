@@ -7,8 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SigninComponent } from './signin/signin.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
-import { ForumComponent } from './forum/forum.component';
+import { YoutubeComponent } from './youtube/youtube.component';
 
+import { PerioddateComponent } from './perioddate/perioddate.component';
 
 
 const routes: Routes = [ 
@@ -42,8 +43,12 @@ const routes: Routes = [
 },
 
 {
-  path: 'forum',
-  component: ForumComponent,
+  path: 'youtube',
+  component: YoutubeComponent,
+},
+{
+  path: 'perioddate',
+  component: PerioddateComponent,
 },
 ];
 

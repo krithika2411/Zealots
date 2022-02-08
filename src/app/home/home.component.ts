@@ -12,6 +12,9 @@ export class HomeComponent implements OnInit {
 
   constructor(private as: AuthService, private router: Router) { }
 
+
+  
+  
   ngOnInit(): void {
     this.as.getUserState().subscribe(res => {
       if (!res) this.router.navigate(['/signin'])

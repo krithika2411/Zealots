@@ -2,7 +2,7 @@
 .footer{
     
     margin-top: 100vh;
-    position: relative;
+    // position: relative;
     height: 30vh;
     width: 100vw;
     background: #c7a0d7;
@@ -13,7 +13,7 @@
     flex-direction: column;
     bottom:0%;
 }
-.custom-shape-divider-bottom-1643891264 {
+.custom-shape-divider-bottom {
     position: absolute;
     bottom: 75vh;
     left: 0;
@@ -21,19 +21,43 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    height: 25vh;;
+    height: 25vh;
+    animation: changeColor 3s infinite alternate;
 }
 
-.custom-shape-divider-bottom-1643891264 svg {
-    position: relative;
+.custom-shape-divider-bottom svg {
+    // position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 177px;
+
 }
 
-.custom-shape-divider-bottom-1643891264 .shape-fill {
+.custom-shape-divider-bottom .shape-fill {
     fill: #c7a0d7;
+   
 }
+
+// #wave {
+//     animation: changeColor 3s infinite alternate;
+//   }
+// #wave1 {
+//     animation: changeColor 3s infinite alternate;
+//   }
+// #wave {
+//     animation: changeColor 3s infinite alternate;
+//   }
+  
+
+// @keyframes changeColor {
+//     0%{
+//        fill: #c7a0d7;
+//     }
+//     100%
+//     {
+//         fill: #FCAEBB;
+//     }
+// }
 .block
 {
     height: 27vh;

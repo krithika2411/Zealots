@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FootComponent } from './foot/foot.component';
-
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
 import { YoutubeComponent } from './youtube/youtube.component';
 
+import { PerioddateComponent } from './perioddate/perioddate.component';
 
 
 const routes: Routes = [ 
@@ -34,6 +34,10 @@ const routes: Routes = [
 {
   path: 'youtube',
   component: YoutubeComponent,
+},
+{
+  path: 'perioddate',
+  component: PerioddateComponent,
 },
 ];
 

@@ -13,7 +13,7 @@ export class PerioddateComponent implements OnInit {
    })
 
    onSubmit(){
-     console.log(this.userprofileForm.value);
+     console.log(this.userprofileForm.value.date);
    }
   constructor() { }
 

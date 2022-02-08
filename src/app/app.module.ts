@@ -37,6 +37,7 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     PerioddateComponent,
   ],
   imports: [
+    BrowserModule,
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,
     AngularFireAuthModule,

@@ -28,8 +28,11 @@ export class MoodtrackerComponent implements OnInit {
     if (this.month != tempvar1.getMonth()) {
       return false;
     }
-    else if(this.currentday == this.daysofweek(i, j) &&  this.currentday && this.month == this.month) 
-    { return true; }
+    else if(this.currentday == this.daysofweek(i, j)  && this.month ==tempvar1.getMonth()) 
+    
+    { console.log("current",this.currentday , this.daysofweek(i, j) , this.month,tempvar1.getMonth() )
+      return true; }
+
     else { return false; }
   }
 
@@ -69,14 +72,19 @@ export class MoodtrackerComponent implements OnInit {
     }
   }
 
-  setoffset(currmonth: number) {
-    if (new Date(2022, currmonth, 1).getDay() -1) {
-      this.offsetcurrentmonth=new Date(2022, currmonth, 1).getDay();
+  setoffset(currmonth: number) 
+  {
+    console.log(new Date(2022, currmonth, 1).getDay(), "dayy");
+    if (new Date(2022, currmonth, 1).getDay() ) {
+      this.offsetcurrentmonth=new Date(2022, currmonth, 1).getDay() -1;
+      console.log(this.offsetcurrentmonth, "da");
     }
     else {
-      this.offsetcurrentmonth=new Date(2022, currmonth, 1).getDay() -1;}
+      this.offsetcurrentmonth=new Date(2022, currmonth, 1).getDay() ;
+      console.log(this.offsetcurrentmonth, "day");
+    }
     
-
+     
 
   }
    
@@ -86,6 +94,7 @@ export class MoodtrackerComponent implements OnInit {
   }
   tempvar = new Date(Date.now());
   ngOnInit(): void {
+    this.tempvar = new Date(Date.now());
     let unix_timestamp = Date.now();
     // Create a new JavaScript Date object based on the timestamp
     // multiplied by 1000 so that the argument is in milliseconds, not seconds.
@@ -99,7 +108,7 @@ export class MoodtrackerComponent implements OnInit {
 
     // Will display time in 10:30:23 format
     var formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-    this.currentday= this.tempvar.getDay();
+    this.currentday= this.tempvar.getDate();
     this.currentyear= this.tempvar.getFullYear();
     console.log(formattedTime, unix_timestamp, date);
     // console.log(date+'--'+  hours+'+'+  minutes+'-'+ seconds ); 
@@ -111,7 +120,13 @@ export class MoodtrackerComponent implements OnInit {
     this.setoffset(this.month);
     
         //  console.log(this.offsetcurrentmonth, 'this is date')
-
+     
+        // for (let index = 0; index < 5; index++) {
+        //  for (let j = 0; j<7; j++){
+        //     console.log(this.iscurrent(index, j), index,j ,'hello');
+        //  }
+          
+        // }
   }
 
 }

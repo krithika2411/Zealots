@@ -12,7 +12,9 @@
             </div>
         </div>
         
-        <div class="slider1"
+        <div class="slider1" [ngClass]="{
+          slider1slide: !login
+        }"
            >
             <div class="signin_form_card">
                 <form [formGroup]="formreg"  class="signupform">

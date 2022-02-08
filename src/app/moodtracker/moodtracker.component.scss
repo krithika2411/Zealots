@@ -203,8 +203,11 @@
     height: 10vh;
     width: 12%;
     background-color: coral;
-    align-items: center;
+    // align-items: center;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     cursor: pointer;
     font-size:25px;
 }
@@ -219,8 +222,9 @@
 
 .mark{
     border-radius : 50%;
-    // height :2vh;
-    // width : 2vh;
-    background-color: lightcoral;
+    height :4vh;
+    width : 4vh;
+    
+    background-color:blue;
  }
 

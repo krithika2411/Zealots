@@ -40,6 +40,8 @@ export class MoodtrackerComponent implements OnInit {
   date1: Date = new Date();
   itosave:number=0;
   jtosave:number=0;
+  getperioddatadate:string=1+"-"+  this.months[0]+"-"+2022;
+  getperioddatastring:any;
   // referencedate:Date= 
   constructor(private as: AuthService, private router: Router,  private db: AngularFirestore) { }
   userprofileForm = new FormGroup({
@@ -60,8 +62,20 @@ onFormsubmit(){
   this.db.collection("PeriodCal").doc(this.user.uid).collection("Pain").doc(this.itosave + "-" + this.jtosave + "-" + this.month).set(this.userForm.value).then(res => {
     this.painboolean = false; 
   })
+  // this.getperioddata(this.itosave,this.jtosave);
 }
-
+getperioddata(i:number,j:number){
+  this.db.collection("PeriodCal").doc(this.user.uid).collection("Pain").doc(i + "-" + j + "-" + this.month).snapshotChanges().subscribe(res => {  
+    
+  console.log(res.payload.data());
+  
+  this.getperioddatadate=this.daysofweek(i,j)+"-"+  this.months[this.month]+"-"+2022;
+  this.getperioddatastring=res.payload.data();
+  this.getperioddatastring = this.getperioddatastring["pain"];
+  
+  console.log(this.daysofweek(i,j)+"-"+  this.months[this.month]+"-"+2022);
+})
+}
   //Function to submit the last periods date 
   onSubmit() {
     // console.log(this.userprofileForm.value);
@@ -93,7 +107,8 @@ onFormsubmit(){
   makingbooleantrue(i:number,j:number){
     this.painboolean = true;
     this.itosave=i;
-    this.jtosave=j
+    this.jtosave=j;
+    // this.getperioddata(this.itosave,this.jtosave);
   }
 
   // function to mark the current day on the calender

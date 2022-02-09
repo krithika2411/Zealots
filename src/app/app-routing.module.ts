@@ -9,6 +9,7 @@ import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
 import { YoutubeComponent } from './youtube/youtube.component';
 import { PerioddateComponent } from './perioddate/perioddate.component';
+import { ForumComponent } from './forum/forum.component';
 
 
 const routes: Routes = [ 
@@ -49,6 +50,10 @@ const routes: Routes = [
   path: 'perioddate',
   component: PerioddateComponent,
 },
+{
+  path: 'forum',
+  component: ForumComponent,  
+}
 ];
 
 @NgModule({

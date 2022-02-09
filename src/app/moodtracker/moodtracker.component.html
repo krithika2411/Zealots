@@ -1,25 +1,26 @@
 <div class="main">
     <div class="box">
         <div class="periodtrack">
-            <div class="period">
-                <div class="periodmonth">
-                    <div class="numdate"></div>
 
-                </div>
-                <div class="numofdays">
-                    <div class="sub"></div>
-                    <div class="num"></div>
-                    <div class="add"></div>
-                </div>
-                <div class="cycle">
-                    <div class="sub"></div>
-                    <div class="num"></div>
-                    <div class="add"></div>
-                </div>
+            <div class="formclass">
+                <form [formGroup]="userprofileForm" (ngSubmit)="onSubmit()">
 
-                <div class="track">Track Now</div>
-
+                    <label>
+                        Date: <input type="date" formControlName="date">
+                    </label>
+                    <label>
+                        Flow: <input type="number" min="1" max="10" formControlName="flow">
+                    </label>
+                    <label>
+                        Cycle: <input type="number" min="1" max="28" formControlName="cycle">
+                    </label>
+                    <button type="submit">Track Now</button>
+                </form>
             </div>
+
+            <!-- <div class="track" (ngSubmit)="onSubmit()">Track Now</div> -->
+
+
         </div>
         <div class="calender">
             <div class="head">
@@ -39,7 +40,7 @@
                 <div class="five" *ngFor="let week of [0, 1, 2, 3, 4] ">
                     <div class="seven " *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" >
                        <div [ngClass]="{
-                        mark:iscurrent(week, day)
+                        mark:iscurrent(week, day) , periodmark:oncyclesubmmit(week, day)
                     }"
                        >{{daysofweek(week, day) }}</div>
                              
@@ -48,3 +49,5 @@
             </div>
         </div>
     </div>
+
+    

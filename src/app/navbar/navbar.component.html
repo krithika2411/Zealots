@@ -1,13 +1,14 @@
 
 
-<div class="nav">
-    
+<nav class="nav">
+  <div class="new">
+  <div class="nav__listlogo">
+    <img class="nav__im" src="../../assets/images/Logo.png" alt="">
+  </div>
     <div class="nav__list">
-      <div class="nav__listlogo">
-        <img class="nav__im" src="../../assets/images/Logo.png" alt="">
-      </div>
       <li *ngFor="let x of navdata" class="nav__listitem">
         <a routerLink= "{{ x.link}}" >{{x. name}}</a>
       </li> 
     </div>
   </div>
+  </nav>

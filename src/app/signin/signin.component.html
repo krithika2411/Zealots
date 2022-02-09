@@ -1,15 +1,19 @@
-<!-- <p>signin works!</p> -->
+
 <div class="bod">
-    <div class="im"></div>
+  <div class="gif">
+    <div class="im">
+     
+    </div>
+  </div>
     <div class="container">
         <div class="card1_bg">
             <div class="card signin" style="font-size: large;">
                 <strong style="font-family: 'Pacifico', cursive;">Alredy have an Account?</strong>
-                <button class="signup_bttn" (click)="move()">Sign in</button>
+                <button class="btn btn1" (click)="move()">Sign in</button>
             </div>
             <div class="card signup" style="font-size: large;">
                 <strong style="font-family: 'Pacifico', cursive;">Don't have an Account?</strong>
-                <button class="signup_bttn" (click)="move()">Sign up</button>
+                <button class="btn btn1" (click)="move()">Sign up</button>
             </div>
         </div>
         
@@ -24,7 +28,7 @@
                             <strong style="font-family: 'Pacifico', cursive;">Create Account</strong>
                         </div>
                         <p>Register using your Account</p>
-                        <!-- <p style="font-weight: bolder; font-size: 4vh;">OR</p> -->
+                       
                         <div *ngFor="let x of signupdata" class="inputfield">
                             <div *ngIf="x.type != 'dropdown'">
                               <input
@@ -101,7 +105,7 @@
             </form>
             </div>
     </div>
-    <!-- </div> -->
+    
 </div>
 
 </div>

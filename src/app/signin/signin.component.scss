@@ -6,20 +6,25 @@
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
-    // transition: 0.5s;
+    
     background-color: #E9C1F6;
     display: flex;
     flex-direction: row;
-    gap: 1vw;
+    
     margin-top: -9vh;
+}
+.gif{
+    overflow: hidden;
+    background-repeat: no-repeat;
 }
 .im{
     position: relative;
-    width: 40vw;
+    width: 33vw;
     height: 70vh;
-    // border-style: dashed;
+   
     overflow: hidden;
-    // background-color: rgba(0, 0, 255, 0.356);
+    background-repeat: no-repeat;
+   
     background: url(../../assets/gif/signbg.gif);
 }
 
@@ -28,23 +33,23 @@
     position: relative;
     width: 50vw;
     height: 70vh;
-    // border-style: dashed;
+    
     overflow: hidden;
-    // background-color: yellow;
+    
 }
 
 .card1_bg{
-    // top: 6%;
+    
     position: absolute;
     width: 50vw;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: antiquewhite;
+    
     background-color: rgba(255, 255, 255, 0.219);
     box-shadow: rgba(255, 255, 255, 0.219);
-    // box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    
     border-radius: 20px;
 }
 
@@ -58,17 +63,13 @@
     flex-direction: column;
 }
 
-// .card1_bg .card p{
-//     color: black;
-//     font-size: larger;
-//     font-weight: bold;
-// }
+
 
 .card1_bg .card button{
     cursor: pointer;
     background: white;
     color: black;
-    // font-family: 'Pacifico', cursive;
+   
     font-size: medium;
     font-weight: lighter;
     border-radius: 20px;
@@ -76,21 +77,20 @@
 }
 
 .signin_form_card{
-    // position: absolute;
-    // top: -5vh;
+    
     width: 25vw;
     height: 70vh;
     background-color: white;
-    // border-radius: 20px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     line-height: 4vh;
     flex-direction: column;
-    // box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    
     transition: 0.5s, ease-in-out;
-    // border-style: dashed;
+    
     transform: translateX(0%);
 }
 
@@ -103,7 +103,7 @@
 
 .slider1slide{
     transform: translateX(50%);
-    // transition: 5s, ease-in-out;    
+      
 }
 
 .signin_title{
@@ -112,31 +112,17 @@
 .signup_title{
     font-size: 250%;
 }
-.signup_bttn{
-    height: 5vh;
-    border: purple;
-    
-    // font-family: 'Pacifico', cursive;
-}
 
-// .signin_form_card .btn{
-//     height: 2vh;
-//     // text-align: center;
-//     text-align: justify;
-//     font-size: large;
-// }
 
 .inputfield input {
-    // line-height: 2vh;
+    
     width: 20vw;
     height: 3.5vh;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // padding-bottom: 2%;
-    // line-height: normal;
-    // gap: 2px;
+    
     color: rgb(0, 0, 0);
     font-size: 70%;
     border-radius: 10px;
@@ -174,6 +160,148 @@
     border-radius: 20px;
 }
 
-// .error{
-//     // color: rgb(121, 35, 35);
-// }
+
+
+@media screen and (max-width:600px) {
+    .bod{
+        display: flex;
+        flex-direction: column;
+    }
+    .im{
+        position: relative;
+        width: 90vw;
+        height: 70vh;
+       
+        overflow: hidden;
+        
+        background: url(../../assets/gif/signbg.gif);
+    }
+    .container{
+        position: relative;
+        width: 90vw;
+        height: 70vh;
+        
+        overflow: hidden;
+        margin-top: -16%;
+       
+    }
+    
+    .card1_bg{
+        
+        position: absolute;
+        width: 90vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgba(255, 255, 255, 0.219);
+        box-shadow: rgba(255, 255, 255, 0.219);
+        
+        border-radius: 20px;
+    }
+    
+    .card1_bg .card{
+        position: relative;
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card1_bg .card button{
+        cursor: pointer;
+        background: white;
+        color: black;
+        
+        font-size: medium;
+        font-weight: lighter;
+        border-radius: 20px;
+        border: none;
+    }
+    
+    .signin_form_card{
+       
+        width: 45vw;
+        height: 70vh;
+        background-color: white;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 4vh;
+        flex-direction: column;
+       
+        transition: 0.5s, ease-in-out;
+        
+        transform: translateX(0%);
+    }
+    
+    .slider1{
+        display: flex;
+        transform: translateX(-50%);
+        transition: transform 1.5s ease-in-out;
+    
+    }
+    
+    .slider1slide{
+        transform: translateX(50%);
+           
+    }
+    
+    .signin_title{
+        font-size: 250%;
+    }
+    .signup_title{
+        font-size: 250%;
+    }
+    
+    .inputfield input {
+        
+        width: 40vw;
+        height: 3.5vh;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-size: 70%;
+        border-radius: 10px;
+        background-color: rgba(221, 160, 221, 0.685);
+        border-color: black;
+        border-width: 1px;
+        
+    }
+    
+    .container .signin_form_card button{
+        cursor: pointer;
+        background: purple;
+        color: white;
+        font-size: medium;
+        font-weight: lighter;
+        border-radius: 20px;
+        border: none;
+    }
+    .container .signup_form_card button{
+        cursor: pointer;
+        background: purple;
+        color: white;
+        font-size: medium;
+        font-weight: lighter;
+        border-radius: 20px;
+        border: none;
+    }
+    
+    .alert{
+        width: 40vw;
+        font-size: 80%;
+        padding: 0;
+        color: black;
+        background-color: rgb(243, 91, 91);
+        border-radius: 20px;
+    }
+    
+    
+}

@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .footer{
     
-    margin-top: 100vh;
-    // position: relative;
+    
     height: 30vh;
     width: 100vw;
     background: #c7a0d7;
-    margin-top: 20vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom:0%;
+    
 }
 .custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 75vh;
+    margin-bottom: -1px;
+    
+
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .custom-shape-divider-bottom svg {
-    // position: relative;
+    
     display: block;
     width: calc(100% + 1.3px);
     height: 177px;
@@ -38,32 +38,13 @@
    
 }
 
-// #wave {
-//     animation: changeColor 3s infinite alternate;
-//   }
-// #wave1 {
-//     animation: changeColor 3s infinite alternate;
-//   }
-// #wave {
-//     animation: changeColor 3s infinite alternate;
-//   }
-  
 
-// @keyframes changeColor {
-//     0%{
-//        fill: #c7a0d7;
-//     }
-//     100%
-//     {
-//         fill: #FCAEBB;
-//     }
-// }
 .block
 {
     height: 27vh;
     width: 100%;
     justify-content: baseline;
-    // background-color: #c7a0d7;
+    
     display: flex;
     flex-direction: row;
 
@@ -71,26 +52,25 @@
 .picture{
     height: 27vh;
     width: 25vw;
-    // background-image: url(../assets/images/flower.png);
-    // background-color: #c7a0d7;
+    
     margin-bottom: 2vh;
 }
 .flower{
     height: 30vh;
     width: 20vw;
-    // margin-left: 2vh;
+    
    
 
 }
 .gap{
     height: 27vh;
     width: 5vw;
-    // background-color: #c7a0d7;  
+      
 }
 .text{
     height: 27vh;
     width: 30vw;
-    // background-color: #c7a0d7;
+    
 }
 .text h1{
     color: black;

@@ -3,10 +3,9 @@
 .nav {
   width: 100vw;
   height: 10vh;
-  z-index: 999;
-//   height: 10vh;
   align-items: center;
-  background-color: #E9C1F6;
+  background-color: #e9c1f6;
+  z-index: 999;
 }
 
 .nav__list{
@@ -21,18 +20,17 @@
 }
 
 .nav__listlogo{
-  // background-color: black;
-  // background: url(/src/assets/images/Logo.png);
+  
   width: 8vw;
   height: 12vh;
-  // margin-right: 90vh;
+  
   border-radius: 50%;
 }
 
 .nav__listlogo .nav__im{
-  // background-color: yellow;
+  
   margin-top: -38%;
-  // object-fit: cover;
+  object-fit: cover;
   height: 20vh;
   width: 10vw;
 }

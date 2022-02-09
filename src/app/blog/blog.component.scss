@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .main {
-    margin : 0;
-    padding : 0;
+    
     height :100vh;
     width : 100vw;
     
@@ -8,17 +9,41 @@
 
 .title
 {
-    height :5vh;
+    height :12vh;
     width : 100%;
-    background-color: aquamarine;
+    background-color: #E9C1F6;
     z-index: 1000;
+    margin-top: -5vh;
+    text-align: center;
+    font-size:40px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 800;
+}
+.custom-shape-divider-top-1644313685 {
+   
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.custom-shape-divider-top-1644313685 svg {
+     position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1644313685 .shape-fill {
+    fill: #E9C1F6;
 }
 
 .ani
 {
-    height : 58vh;
+    height : 53vh;
     width : 100%;
     align-items: center;
+    background-color:a;
     overflow: hidden;
     
 
@@ -52,36 +77,50 @@
 .list
 {
     width:35%;
-    height:100vh;
-    background-color:cadetblue;
+    height:140vh;
+    background-color:white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: center;
+}
+.adj{
+    height: 2vh;
 }
 
 
 
 .blog 
 {
-    height: 18vh;
+    height: 32vh;
     width: 100%;
     justify-content: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 2vh;
     cursor: pointer;
-    background-color:bisque;
+   
 }
 
 .pic
 {
-  height: 18vh;
-  width: 55%;
+  height: 30vh;
+  width: 80%;
+  align-items: center;
+  margin-left: 3.5vw;
+  overflow: hidden;
   background-color: chocolate;
 }
 
+
 .info
 {
-    height: 18vh;
-    width:45% ;
-    background-color: darkorchid;
+    height: 5vh;
+    width:100% ;
+    
+    align-items: center;
+    background-color: pink;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 .blog:hover{
@@ -92,31 +131,63 @@
 .description
 {
     width:65%;
-    // height:100vh;
+    
     display: flex;
     align-items:center;
     flex-direction: column;
-    background-color:burlywood;
+  
 }
 
 .tit
 {
-    height:7vh;
-    width: 100%;
-    background-color: crimson;
+    height:8vh;
+    width: 70%;
+    background-color: pink;
+    border-radius: 200px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 28px;
 }
 
 .pics
 {
-    height:35vh;
-    width:50%;
+    height:40vh;
+    width:70%;
     text-align: center;
     align-items:center;
     background-color: rgb(135, 222, 150);
 }
 
-.des
+.dec
 {
-    height:50vh;
+    height:65vh;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+.adjust{
+    height: 5vh;
+   
     width: 100%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {  FormControl,  FormGroup,  Validators,  AbstractControl,} from '@angular/forms';
 import { logindata, regdata } from '../JSONdata/signin';
-// import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -19,11 +19,11 @@ export class SigninComponent implements OnInit {
   error: string = '';
   signindata: any;
   signupdata: any;
-  // res: any;
+  
 
   move() {
     this.login = !this.login;
-    // this.error = false;
+    
   }
 
   submit(){
@@ -47,7 +47,7 @@ export class SigninComponent implements OnInit {
       if (!this.formreg.invalid) {
         let data = this.formreg.value;
         console.log(data);
-          // data['role'] = this.signupdata[5].value;
+         
           this.as.signup(data)
           .then((res) => {
             this.login = true;
@@ -89,7 +89,7 @@ export class SigninComponent implements OnInit {
           /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/
         ),
       ]),
-      // role: new FormControl('user'),
+     
       confirmpassword: new FormControl('', [Validators.required]),
     },
     { validators: this.checkPasswords }
@@ -97,8 +97,7 @@ export class SigninComponent implements OnInit {
 
   
   ngOnInit(): void {
-    // console.log(this.formreg.value);
-    // console.log(this.formlogin.value);
+  
     this.signindata = logindata;
     this.signupdata = regdata;  
     this.as.getUserState().subscribe(res => {
@@ -108,29 +107,8 @@ export class SigninComponent implements OnInit {
   }
   
 
-  // ngOnInit(): void {
-    // console.log(this.formreg.value);
-    // console.log(this.formlogin.value);
-    // this.signindata = logindata;
-    // this.signupdata = regdata;
+  
 
-
-
-
-
-
-    // this.formreg.setValidators(this.checkPasswords);
-    // this.as.getUserState().subscribe(res => {
-    //   if (res) {
-    //     this.as.logout();
-    //   }
-    //   // this.user = res;
-    //   // this.as.getprofile(this.user.uid).subscribe((res: any) => {
-    //   //   this.role = res.payload.data().role;
-    //   // })
-    // })
-    
-  // }
   
 
   formlog(name: string) {
@@ -141,11 +119,11 @@ export class SigninComponent implements OnInit {
   }
 
   checkPasswords(group: AbstractControl) {
-    // here we have the 'passwords' group
+    
     let pass = group.get('password')?.value;
     let confirmPass = group.get('confirmpassword')?.value;
 
-    // console.log(pass, confirmPass, pass == confirmPass);
+   
     return pass === confirmPass ? null : { notSame: true };
   }
 

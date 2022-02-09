@@ -31,6 +31,11 @@ export let navbar = [
     },
     {
         "role":"user",
+        "name":"Forum",
+        "link":"/forum",
+    },
+    {
+        "role":"user",
         "name":"Log Out",
         "link":"/signin",
     },

@@ -37,6 +37,7 @@ export class MoodtrackerComponent implements OnInit {
   painboolean:boolean = false;
   pain:string= "0";
   message:string= "0";
+  
   date1: Date = new Date();
   itosave:number=0;
   jtosave:number=0;
@@ -54,7 +55,9 @@ export class MoodtrackerComponent implements OnInit {
   userForm = new FormGroup({
     pain: new FormControl(''),
   })
-
+makingbooleanfalse(){
+  this.painboolean=false;
+}
 onFormsubmit(){
   this.pain = this.userForm.value.pain;
   console.log(this.pain);

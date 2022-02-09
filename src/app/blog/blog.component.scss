@@ -1,6 +1,6 @@
 .main {
-    margin : 0;
-    padding : 0;
+    // margin : 0;
+    // padding : 0;
     height :100vh;
     width : 100vw;
     // background-color: #e9c1f6;
@@ -10,27 +10,39 @@
 {
     height :5vh;
     width : 100%;
-    background-color: aquamarine;
+    background-color: #e9c1f6b6;
     z-index: 1000;
+    font-size:25px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 800;
 }
+// .custom-shape-divider-top-1644365657 {
+//     // position: absolute;
+//     // top: 0;
+//     // left: 0;
+//     width: 100%;
+//     overflow: hidden;
+//     // line-height: 0;
+// }
+
+// .custom-shape-divider-top-1644365657 svg {
+//     position: relative;
+//     display: block;
+//     width: calc(100% + 1.3px);
+//     height: 69px;
+// }
+
+// .custom-shape-divider-top-1644365657 .shape-fill {
+//     fill:#c7a0d77c;
+// }
 
 .ani
 {
-<<<<<<< HEAD
-    height : 54vh;
+    height : 53vh;
     width : 100%;
     align-items: center;
     background-color:a;
     overflow: hidden;
-=======
-    height : 58vh;
-    width : 100%;
-    align-items: center;
-    overflow: hidden;
-    // background-color:a;
-
-
->>>>>>> a7c3e72fa18afbc6d1cfb27eda381d9101b8b4fc
 
 }
 .girl{
@@ -42,7 +54,7 @@
     // border: black;
     
     // border-style: dotted;
-    margin-top: -17vh;
+    margin-top: -16vh;
     // z-index: -1;
     // background-color:brown;
     // padding-top: -40%;
@@ -74,17 +86,19 @@
     width:35%;
     height:100vh;
     background-color:cadetblue;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
 
 .blog 
 {
-    height: 18vh;
+    height: 32vh;
     width: 100%;
     justify-content: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 2vh;
     cursor: pointer;
     background-color:bisque;
@@ -92,15 +106,17 @@
 
 .pic
 {
-  height: 18vh;
-  width: 55%;
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
   background-color: chocolate;
 }
 
+
 .info
 {
-    height: 18vh;
-    width:45% ;
+    height: 3vh;
+    width:100% ;
     background-color: darkorchid;
 }
 
@@ -140,3 +156,23 @@
     height:50vh;
     width: 100%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

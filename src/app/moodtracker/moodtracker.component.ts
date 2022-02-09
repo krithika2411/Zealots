@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { type } from 'os';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 // import { weekdays, months as mm } from '../JSONdata/calender';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
@@ -32,15 +34,33 @@ export class MoodtrackerComponent implements OnInit {
   tempperiod: Date = new Date();
   temperioddate: Date = new Date();
   perioddate1: Date = new Date();
-
-
+  painboolean:boolean = false;
+  pain:string= "0";
+  message:string= "0";
+  date1: Date = new Date();
+  itosave:number=0;
+  jtosave:number=0;
   // referencedate:Date= 
-  constructor(private as: AuthService, private router: Router) { }
+  constructor(private as: AuthService, private router: Router,  private db: AngularFirestore) { }
   userprofileForm = new FormGroup({
     cycle: new FormControl(''),
     flow: new FormControl(''),
     date: new FormControl(''),
   })
+
+  
+  userForm = new FormGroup({
+    pain: new FormControl(''),
+  })
+
+onFormsubmit(){
+  this.pain = this.userForm.value.pain;
+  console.log(this.pain);
+ 
+  this.db.collection("PeriodCal").doc(this.user.uid).collection("Pain").doc(this.itosave + "-" + this.jtosave + "-" + this.month).set(this.userForm.value).then(res => {
+    this.painboolean = false; 
+  })
+}
 
   //Function to submit the last periods date 
   onSubmit() {
@@ -68,6 +88,12 @@ export class MoodtrackerComponent implements OnInit {
     }
     this.periodboolean = true;
 
+  }
+
+  makingbooleantrue(i:number,j:number){
+    this.painboolean = true;
+    this.itosave=i;
+    this.jtosave=j
   }
 
   // function to mark the current day on the calender
@@ -178,7 +204,7 @@ export class MoodtrackerComponent implements OnInit {
 
   tempvar = new Date(Date.now());
   ngOnInit(): void {
-
+console.log(this.painboolean);
     this.as.getUserState().subscribe(res => {
       if (!res) this.router.navigate(['/signin'])
       this.user = res;

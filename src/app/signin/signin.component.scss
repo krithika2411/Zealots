@@ -13,12 +13,17 @@
     // gap: 1vw;
     margin-top: -9vh;
 }
+.gif{
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
 .im{
     position: relative;
-    width: 40vw;
+    width: 33vw;
     height: 70vh;
     // border-style: dashed;
     overflow: hidden;
+    background-repeat: no-repeat;
     // background-color: rgba(0, 0, 255, 0.356);
     background: url(../../assets/gif/signbg.gif);
 }

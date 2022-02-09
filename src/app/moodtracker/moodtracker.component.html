@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" *ngIf="!painboolean">
     <div class="box">
         <div class="periodtrack">
 
@@ -19,8 +19,19 @@
             </div>
 
             <div class="trackcol">
-                <div class="per"></div>
-                <div class="color"></div>
+                <div class="per">
+                    <div class="col"></div>
+                    <div class="name"></div>
+                </div>
+                <div class="per">
+                    <div class="col1"></div>
+                    <div class="name"></div>
+                </div>
+                <div class="per">
+                    <div class="col2"></div>
+                    <div class="name"></div>
+                </div>
+                <!-- <div class=""></div> -->
             </div>
 
 
@@ -42,18 +53,44 @@
             <div class="grid">
                 <div class="five" *ngFor="let week of [0, 1, 2, 3, 4] ">
                     <div class="seven " *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" >
-                       <div [ngClass]="{
+                       <div (click)="getperioddata(week,day);" [ngClass]="{
                         mark:iscurrent(week, day), periodmark: isCycle(week, day), ovulationmark: isOvulation(week, day) }"
-                       >{{daysofweek(week, day) }}</div>
+                       >{{daysofweek(week, day) }}
+                    <br/>
+                   <div *ngIf="daysofweek(week, day)!='' " (click)="makingbooleantrue(week,day);"> Form</div>
+                    </div>
                              
                     </div>
                   </div>
             </div>
+
+            <div class="inp">
+                <div class="dat">{{getperioddatadate}}</div>
+                <div class="msg">{{getperioddatastring}}</div>
+            </div>
         </div>
     </div>
  
+</div>
 
+    <div class="form2" *ngIf="painboolean">
+        <div></div>
+        <div class="frm">
+            <div class="adjust1">
+            <div class="title1">How was your health today</div>
+            <div class="cross">&#10005;</div></div>
+            <div class="frm2">
+                <div class="adjust2">
+                
+                    <form [formGroup]="userForm" (ngSubmit)="onFormsubmit()">
 
-    <div class="form2">
-
+                        <label>
+                           Message: <input type="text" formControlName="pain">
+                        </label>
+                        <button type="submit">submit</button>
+                   
+                </form>
+            </div></div>
+        </div>
+        
     </div>

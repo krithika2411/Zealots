@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { type } from 'os';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 // import { weekdays, months as mm } from '../JSONdata/calender';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
@@ -32,16 +34,48 @@ export class MoodtrackerComponent implements OnInit {
   tempperiod: Date = new Date();
   temperioddate: Date = new Date();
   perioddate1: Date = new Date();
-
-
+  painboolean:boolean = false;
+  pain:string= "0";
+  message:string= "0";
+  date1: Date = new Date();
+  itosave:number=0;
+  jtosave:number=0;
+  getperioddatadate:string=1+"-"+  this.months[0]+"-"+2022;
+  getperioddatastring:any;
   // referencedate:Date= 
-  constructor(private as: AuthService, private router: Router) { }
+  constructor(private as: AuthService, private router: Router,  private db: AngularFirestore) { }
   userprofileForm = new FormGroup({
     cycle: new FormControl(''),
     flow: new FormControl(''),
     date: new FormControl(''),
   })
 
+  
+  userForm = new FormGroup({
+    pain: new FormControl(''),
+  })
+
+onFormsubmit(){
+  this.pain = this.userForm.value.pain;
+  console.log(this.pain);
+ 
+  this.db.collection("PeriodCal").doc(this.user.uid).collection("Pain").doc(this.itosave + "-" + this.jtosave + "-" + this.month).set(this.userForm.value).then(res => {
+    this.painboolean = false; 
+  })
+  // this.getperioddata(this.itosave,this.jtosave);
+}
+getperioddata(i:number,j:number){
+  this.db.collection("PeriodCal").doc(this.user.uid).collection("Pain").doc(i + "-" + j + "-" + this.month).snapshotChanges().subscribe(res => {  
+    
+  console.log(res.payload.data());
+  
+  this.getperioddatadate=this.daysofweek(i,j)+"-"+  this.months[this.month]+"-"+2022;
+  this.getperioddatastring=res.payload.data();
+  this.getperioddatastring = this.getperioddatastring["pain"];
+  
+  console.log(this.daysofweek(i,j)+"-"+  this.months[this.month]+"-"+2022);
+})
+}
   //Function to submit the last periods date 
   onSubmit() {
     // console.log(this.userprofileForm.value);
@@ -68,6 +102,13 @@ export class MoodtrackerComponent implements OnInit {
     }
     this.periodboolean = true;
 
+  }
+
+  makingbooleantrue(i:number,j:number){
+    this.painboolean = true;
+    this.itosave=i;
+    this.jtosave=j;
+    // this.getperioddata(this.itosave,this.jtosave);
   }
 
   // function to mark the current day on the calender
@@ -178,7 +219,7 @@ export class MoodtrackerComponent implements OnInit {
 
   tempvar = new Date(Date.now());
   ngOnInit(): void {
-
+console.log(this.painboolean);
     this.as.getUserState().subscribe(res => {
       if (!res) this.router.navigate(['/signin'])
       this.user = res;

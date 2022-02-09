@@ -21,15 +21,15 @@
             <div class="trackcol">
                 <div class="per">
                     <div class="col"></div>
-                    <div class="name"></div>
+                    <div class="nam">Current Day</div>
                 </div>
                 <div class="per">
                     <div class="col1"></div>
-                    <div class="name"></div>
+                    <div class="nam">Period Days</div>
                 </div>
-                <div class="per">
+                <div class="per1">
                     <div class="col2"></div>
-                    <div class="name"></div>
+                    <div class="nam1">Ovulation Days</div>
                 </div>
                 <!-- <div class=""></div> -->
             </div>
@@ -71,18 +71,18 @@
 </div>
 
     <div class="form2" *ngIf="painboolean">
-        <div></div>
+      >
         <div class="frm">
             <div class="adjust1">
-            <div class="title1">How was your health today</div>
+            <div class="title1">How was your health today?</div>
             <div class="cross">&#10005;</div></div>
             <div class="frm2">
                 <div class="adjust2">
-                
+                   Keep a track of your body ache, cramps etc. in the box below!
                     <form [formGroup]="userForm" (ngSubmit)="onFormsubmit()">
-
+                        
                         <label>
-                           Message: <input type="text" formControlName="pain">
+                          <input type="text" formControlName="pain">
                         </label>
                         <button type="submit">submit</button>
                    

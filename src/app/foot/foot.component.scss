@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .footer{
     
-    margin-top: 100vh;
+    // margin-top: 100vh;
     // position: relative;
     height: 30vh;
     width: 100vw;
     background: #c7a0d7;
-    margin-top: 20vh;
+    // margin-top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom:0%;
+    // bottom:0%;
 }
 .custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 75vh;
+    margin-bottom: -1px;
+    // margin-left: 0.5vw;
+    // position: absolute;
+    // bottom: 75vh;
+    // border: #FCAEBB solid;
+
     left: 0;
     width: 100%;
     overflow: hidden;

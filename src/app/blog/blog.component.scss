@@ -1,20 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .main {
     // margin : 0;
     // padding : 0;
     height :100vh;
     width : 100vw;
+    // display: flex;
+    // justify-content: center;
     // background-color: #e9c1f6;
 }
 
 .title
 {
-    height :5vh;
+    height :12vh;
     width : 100%;
-    background-color: #e9c1f6b6;
+    background-color: #E9C1F6;
     z-index: 1000;
-    font-size:25px;
+    margin-top: -5vh;
+    text-align: center;
+    font-size:40px;
     font-family: 'Pacifico', cursive;
     font-weight: 800;
+}
+.custom-shape-divider-top-1644313685 {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    // margin-top: 11.3vh;
+    // margin-right:0.5vw;
+}
+
+.custom-shape-divider-top-1644313685 svg {
+     position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-top-1644313685 .shape-fill {
+    fill: #E9C1F6;
 }
 // .custom-shape-divider-top-1644365657 {
 //     // position: absolute;
@@ -84,10 +111,14 @@
 .list
 {
     width:35%;
-    height:100vh;
-    background-color:cadetblue;
+    height:140vh;
+    background-color:white;
     overflow-y: scroll;
     overflow-x: hidden;
+    align-items: center;
+}
+.adj{
+    height: 2vh;
 }
 
 
@@ -101,13 +132,15 @@
     flex-direction: column;
     margin-bottom: 2vh;
     cursor: pointer;
-    background-color:bisque;
+    // background-color:bisque;
 }
 
 .pic
 {
   height: 30vh;
-  width: 100%;
+  width: 80%;
+  align-items: center;
+  margin-left: 3.5vw;
   overflow: hidden;
   background-color: chocolate;
 }
@@ -115,9 +148,13 @@
 
 .info
 {
-    height: 3vh;
+    height: 5vh;
     width:100% ;
-    background-color: darkorchid;
+    // border-radius: 20px;
+    align-items: center;
+    background-color: pink;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 .blog:hover{
@@ -132,28 +169,40 @@
     display: flex;
     align-items:center;
     flex-direction: column;
-    background-color:burlywood;
+    // background-color:burlywood;
 }
 
 .tit
 {
-    height:7vh;
-    width: 100%;
-    background-color: crimson;
+    height:8vh;
+    width: 70%;
+    background-color: pink;
+    border-radius: 200px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 28px;
 }
 
 .pics
 {
-    height:35vh;
-    width:50%;
+    height:40vh;
+    width:70%;
     text-align: center;
     align-items:center;
     background-color: rgb(135, 222, 150);
 }
 
-.des
+.dec
 {
-    height:50vh;
+    height:65vh;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+.adjust{
+    height: 5vh;
+    // background-color: aqua;
     width: 100%;
 }
 

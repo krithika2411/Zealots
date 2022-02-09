@@ -1,47 +1,49 @@
- 
- <div class="full">
+<div class="full">
 
-     <div class="top"></div>
+    <div class="top">Products</div>
+    <div class="custom-shape-divider-top-1644313685">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
     <div class="product">
-         <div class="two" *ngFor="let rows of [0,1,2]"> 
-           <div class="four" *ngFor="let columns of [0,1,2]" >
-                <!-- <div class="snip"> -->
-                    <div class="content">
-                        <div class="grid">
-                            <figure class="effect-sadie">
-                                <img class="pic" src="../../assets/images/menstural cup.jpg" >
-                                <figcaption>
-                                    <h2>Menstural Cup </h2>
-                                    <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
-                                    <a href="https://codepen.io/mattlansom/pen/MwLKOM">View more</a>
-                                </figcaption>			
-                            </figure>
-                        </div>
-                        <div class="kri">
-                           <div class="amount">&#8377; 250</div> 
-                           <div class="b"><button>Buy Now</button></div>
-                        </div>
-                    </div>
-                    <!-- <div class="figcaption">
-                    <img class ="im"src="../../assets/images/flower.png">  --> 
-                         <!-- <p>information</p> 
-                         <h2>Click here to <span>Buy</span></h2> alt="img02"/
-                    </div>
-                <div class="kri"><button>Now</button> </div>
+        <!-- <div class="two" *ngFor="let rows of [0,1]">  -->
+        <div class="four" *ngFor= "let product of products">
+             <!-- <div class = "prod">
+                <div class = "myrow" *ngFor = "let x of products">
+                    <div>{{x.payload.doc.data().name}}</div>
+                    <div>{{x.payload.doc.data().images}}</div>
+                    <div>{{x.payload.doc.data().link}}</div>
+                    <div>{{x.payload.doc.data().price}}</div>
+                <div>
+            </div>  -->
+             
+             <div class="content">
+                <div class="grid">
+                    <figure class="effect-sadie">
+                      <img class="pic" src="{{product.payload.doc.data().image}} "> 
+                       <figcaption>
+                            <h2>{{product.payload.doc.data().name}} </h2>
+                            <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                            <a href="{{product.payload.doc.data().link}} ">View more</a>
+                        </figcaption>
+                    </figure>
+
+                </div>
+                <div class="kri">
+                    <div class="amount">&#8377; {{product.payload.doc.data().price}} </div>
+                    <!-- <div class="b"><button>Buy Now</button></div> -->
                 </div> 
-            </div><span>Sadie</span>
+         
         </div>
     </div>
-</div> 
-<!-- <div class="content">
-    <div class="grid">
-        <figure class="effect-sadie">
-            <img src="../../assets/images/flower.png" alt="img02"/>
-            <figcaption>
-                <h2>Holy <span>Sadie</span></h2>
-                <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
-                <a href="#">View more</a>
-            </figcaption>			
-        </figure>
-    </div>
-</div> -->
+</div>     
+</div>   

@@ -44,11 +44,15 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
     // FormGroup, FormControl,
-    AngularFireStorageModule,
+    // AngularFireStorageModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,  
+    // FormsModule,
+    // BrowserModule,
+    // ReactiveFormsModule,  
    
-  
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

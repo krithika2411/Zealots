@@ -13,22 +13,23 @@
   display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 10;
     font-family: 'Pacifico', cursive;
     font-weight: normal;
     font-size: 120%;
+    margin-top: -12vh;
 }
 
-.nav__list .nav__listlogo{
+.nav__listlogo{
   // background-color: black;
   // background: url(/src/assets/images/Logo.png);
   width: 8vw;
   height: 12vh;
-  margin-right: 90vh;
+  // margin-right: 90vh;
   border-radius: 50%;
 }
 
-.nav__list .nav__listlogo .nav__im{
+.nav__listlogo .nav__im{
   // background-color: yellow;
   margin-top: -38%;
   // object-fit: cover;

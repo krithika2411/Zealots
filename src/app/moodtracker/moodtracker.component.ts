@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 // import { weekdays, months as mm } from '../JSONdata/calender';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-moodtracker',
@@ -8,6 +10,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./moodtracker.component.scss']
 })
 export class MoodtrackerComponent implements OnInit {
+  user: any;
   days = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
   months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   numberofdays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -28,7 +31,7 @@ export class MoodtrackerComponent implements OnInit {
   tempperiod:Date =new Date( );
   temperioddate:Date = new Date();
   // referencedate:Date= 
-  constructor() { }
+  constructor(private as: AuthService, private router: Router) { }
   userprofileForm = new FormGroup({
     cycle: new FormControl(''),
    flow: new FormControl(''),
@@ -208,6 +211,10 @@ oncyclesubmmit1(i: number, j: number)
 
   
   ngOnInit(): void {
+    this.as.getUserState().subscribe(res => {
+      if (!res) this.router.navigate(['/signin'])
+      this.user = res;
+    });
     this.tempvar = new Date(Date.now());
     let unix_timestamp = Date.now();
     // Create a new JavaScript Date object based on the timestamp

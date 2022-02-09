@@ -1,0 +1,66 @@
+.forum{
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.thread{
+    background-color: blue;
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.info{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    // gap: 4vh;
+}
+// .fix{
+//     background-color: black;
+// }
+.comment1{
+    background-color: aquamarine;
+    height: 20vh;
+    width: 30vw;
+}
+// .space{
+//     background-color: brown ;
+//     height: 4vh;
+//     width: 30vw;
+// }
+.profile{
+    background-color: green;
+    height: 20vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+.sp{
+    height: 20vh;
+    width: 4.5vw;
+}
+.pic{
+    height: 12vh;
+    width: 12vw;
+    background-color: white;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5vh;
+    margin-left: 2vw;
+}
+.name{
+    height: 12vh;
+    width: 41vw;
+    background-color: pink;
+    margin-top: 3.5vh;
+}
+

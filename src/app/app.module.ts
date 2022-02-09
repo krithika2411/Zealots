@@ -19,8 +19,8 @@ import { ProductComponent } from './product/product.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ForumComponent } from './forum/forum.component';
 import { YoutubeComponent } from './youtube/youtube.component';
-import { PerioddateComponent } from './perioddate/perioddate.component';
-// import { FormGroup, FormControl } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     MoodtrackerComponent,
     ProductComponent,
     YoutubeComponent,
-    PerioddateComponent,
+    
   ],
 
   imports: [

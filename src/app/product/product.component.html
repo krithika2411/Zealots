@@ -15,22 +15,15 @@
         </svg>
     </div>
     <div class="product">
-        <!-- <div class="two" *ngFor="let rows of [0,1]">  -->
-        <div class="four" *ngFor= "let product of products">
-             <!-- <div class = "prod">
-                <div class = "myrow" *ngFor = "let x of products">
-                    <div>{{x.payload.doc.data().name}}</div>
-                    <div>{{x.payload.doc.data().images}}</div>
-                    <div>{{x.payload.doc.data().link}}</div>
-                    <div>{{x.payload.doc.data().price}}</div>
-                <div>
-            </div>  -->
-             
-             <div class="content">
+
+        <div class="four" *ngFor="let product of products">
+
+
+            <div class="content">
                 <div class="grid">
                     <figure class="effect-sadie">
-                      <img class="pic" src="{{product.payload.doc.data().image}} "> 
-                       <figcaption>
+                        <img class="pic" src="{{product.payload.doc.data().image}} ">
+                        <figcaption>
                             <h2>{{product.payload.doc.data().name}} </h2>
                             <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
                             <a href="{{product.payload.doc.data().link}} ">View more</a>
@@ -40,10 +33,10 @@
                 </div>
                 <div class="kri">
                     <div class="amount">&#8377; {{product.payload.doc.data().price}} </div>
-                    <!-- <div class="b"><button>Buy Now</button></div> -->
-                </div> 
-         
+
+                </div>
+
+            </div>
         </div>
     </div>
-</div>     
-</div>   
+</div>

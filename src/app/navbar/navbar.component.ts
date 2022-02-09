@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
       if (!res) return;
       this.user = res;
       this.as.getprofile(this.user.uid).subscribe((res: any) => {
-        // this.role = res.payload.data().role;
+       
       })
     })
   }

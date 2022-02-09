@@ -8,7 +8,7 @@ import { SigninComponent } from './signin/signin.component';
 import { MoodtrackerComponent } from './moodtracker/moodtracker.component';
 import { ProductComponent } from './product/product.component';
 import { YoutubeComponent } from './youtube/youtube.component';
-import { PerioddateComponent } from './perioddate/perioddate.component';
+
 import { ForumComponent } from './forum/forum.component';
 
 
@@ -46,10 +46,7 @@ const routes: Routes = [
   path: 'youtube',
   component: YoutubeComponent,
 },
-{
-  path: 'perioddate',
-  component: PerioddateComponent,
-},
+
 {
   path: 'forum',
   component: ForumComponent,  

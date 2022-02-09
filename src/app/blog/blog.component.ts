@@ -17,10 +17,7 @@ export class BlogComponent implements OnInit {
 
   ngOnInit(): void {
     this.bloglink();
-    // this.as.getUserState().subscribe(res => {
-    //   if (!res) this.router.navigate(['/signin'])
-    //   this.user = res;
-    // });
+    
   }
   currentlinkclick(currblogs:any){
     this.currenblogs= currblogs;
@@ -32,6 +29,6 @@ export class BlogComponent implements OnInit {
       this.currenblogs= this.links[0];
       console.log('success');
     })
-    // console.log(this.bloglink);
+    
   }
 }

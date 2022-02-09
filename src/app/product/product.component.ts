@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
-// import { DatabaseopService } from '../services/databaseop.service';
+
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({

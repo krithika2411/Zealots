@@ -51,7 +51,8 @@ import { PerioddateComponent } from './perioddate/perioddate.component';
     // BrowserModule,
     // ReactiveFormsModule,  
    
-  
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

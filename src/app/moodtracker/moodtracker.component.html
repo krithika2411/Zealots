@@ -13,7 +13,7 @@
     </svg>
 </div>
 <div class="main" *ngIf="!painboolean">
-   
+
     <div class="box">
         <div class="periodtrack">
 
@@ -29,7 +29,7 @@
                     <label>
                         Cycle: <input type="number" min="1" max="28" formControlName="cycle">
                     </label>
-                    <button class= "btn6" type="submit">Track Now</button>
+                    <button class="btn6" type="submit">Track Now</button>
                 </form>
             </div>
 
@@ -67,46 +67,50 @@
             </div>
             <div class="grid">
                 <div class="five" *ngFor="let week of [0, 1, 2, 3, 4] ">
-                    <div class="seven " *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]" >
-                       <div (click)="getperioddata(week,day);" [ngClass]="{
-                        mark:iscurrent(week, day), periodmark: isCycle(week, day), ovulationmark: isOvulation(week, day) }"
-                       >{{daysofweek(week, day) }}
-                    <br/>
-                   <div *ngIf="daysofweek(week, day)!='' " (click)="makingbooleantrue(week,day);"> 	&hearts;</div>
+                    <div class="seven " *ngFor="let day of [0, 1, 2, 3, 4, 5, 6]">
+                        <div (click)="getperioddata(week,day);"
+                            [ngClass]="{
+                        mark:iscurrent(week, day), periodmark: isCycle(week, day), ovulationmark: isOvulation(week, day) }">{{daysofweek(week, day) }}
+                            <br />
+                            <div *ngIf="daysofweek(week, day)!='' " (click)="makingbooleantrue(week,day);"> &hearts;
+                            </div>
+                        </div>
+
                     </div>
-                             
-                    </div>
-                  </div>
+                </div>
             </div>
-           <div class="inp1">
-               <div class="inp3">Track of your recorded Health!</div>
-            <div class="inp">
-                <div class="dat">{{getperioddatadate}}</div>
-                <div class="msg">{{getperioddatastring}}</div>
-            </div></div>
+            <div class="inp1">
+                <div class="inp3">Track of your recorded Health!</div>
+                <div class="inp">
+                    <div class="dat">{{getperioddatadate}}</div>
+                    <div class="msg">{{getperioddatastring}}</div>
+                </div>
+            </div>
         </div>
     </div>
- 
+
 </div>
 
-    <div class="form2" *ngIf="painboolean">
-      
-        <div class="frm">
-            <div class="adjust1">
+<div class="form2" *ngIf="painboolean">
+
+    <div class="frm">
+        <div class="adjust1">
             <div class="title1">How was your health today?</div>
-            <div class="cross" (click)="makingbooleanfalse()">&#10005;</div></div>
-            <div class="frm2">
-                <div class="adjust2">
-                   Keep a track of your body ache, cramps etc. in the box below!
-                    <form [formGroup]="userForm" (ngSubmit)="onFormsubmit()">
-                        
-                        <label>
-                          <input type="text" formControlName="pain" style="height:4vh ; width:35vh">
-                        </label>
-                        <button class="btn5"  type="submit" style="height:5vh ; width:15vh">submit</button>
-                   
-                </form>
-            </div></div>
+            <div class="cross" (click)="makingbooleanfalse()">&#10005;</div>
         </div>
-        
+        <div class="frm2">
+            <div class="adjust2">
+                Keep a track of your body ache, cramps etc. in the box below!
+                <form [formGroup]="userForm" (ngSubmit)="onFormsubmit()">
+
+                    <label>
+                        <input type="text" formControlName="pain" style="height:4vh ; width:35vh">
+                    </label>
+                    <button class="btn5" type="submit" style="height:5vh ; width:15vh">submit</button>
+
+                </form>
+            </div>
+        </div>
     </div>
+
+</div>
